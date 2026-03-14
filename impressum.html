@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Impressum von Maly Development — Robin Maly, Freelance App-Entwickler">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Impressum — Maly Development</title>
+  <style>
+    .legal-page {
+      min-height: 100vh;
+      padding-top: calc(var(--nav-height) + var(--space-12));
+      padding-bottom: var(--space-24);
+    }
+    .legal-page .container { max-width: 800px; }
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-4xl);
+      font-weight: 800;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-8);
+    }
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-top: var(--space-10);
+      margin-bottom: var(--space-3);
+    }
+    .legal-page p, .legal-page address {
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      font-style: normal;
+      margin-bottom: var(--space-4);
+    }
+    .legal-page a { color: var(--color-accent-light); text-decoration: underline; text-underline-offset: 3px; }
+    .legal-page a:hover { color: var(--color-text-primary); }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-10);
+      transition: color var(--transition-fast);
+    }
+    .back-link:hover { color: var(--color-accent-light); }
+    .back-link svg { width: 16px; height: 16px; }
+    .legal-divider {
+      border: none;
+      border-top: 1px solid var(--color-border-subtle);
+      margin: var(--space-8) 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav nav--scrolled" role="banner">
+    <div class="nav__container container">
+      <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="url(#logo-grad-imp)"/>
+          <defs>
+            <linearGradient id="logo-grad-imp" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#6366F1"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
+            </linearGradient>
+          </defs>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Syne, sans-serif" font-weight="800" font-size="13"
+                fill="white" letter-spacing="-0.5">MD</text>
+        </svg>
+        <span class="nav__logo-text">Maly Development</span>
+      </a>
+      <a href="/" class="btn btn--ghost btn--sm">← Zurück zur Website</a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
+        </svg>
+        Zurück zur Website
+      </a>
+
+      <h1>Impressum</h1>
+
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <address>
+        Robin Maly<br>
+        Maly Development<br>
+        <!-- TODO: Vollständige Adresse eintragen -->
+        [Straße und Hausnummer]<br>
+        [PLZ] [Ort]<br>
+        Deutschland
+      </address>
+
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail: <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a>
+      </p>
+
+      <h2>Umsatzsteuerliche Angaben</h2>
+      <p>
+        <!-- TODO: Wähle zutreffende Option -->
+        Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).<br>
+        <!-- ODER wenn USt-ID vorhanden: -->
+        <!-- Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE[XXXXXXXXX] -->
+      </p>
+
+      <h2>Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+      <p>
+        Freiberuflicher Software-Entwickler<br>
+        Tätigkeitsort: Deutschland
+      </p>
+
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+      <address>
+        Robin Maly<br>
+        <!-- TODO: Adresse eintragen -->
+        [Straße und Hausnummer]<br>
+        [PLZ] [Ort]
+      </address>
+
+      <hr class="legal-divider">
+
+      <h2>Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+          https://ec.europa.eu/consumers/odr/
+        </a>
+      </p>
+      <p>
+        Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+        Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den
+        allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht
+        verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen
+        zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+      <p>
+        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+        Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt
+        der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden
+        Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.
+      </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+        Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+        verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+        Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
+        Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
+        deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
+        außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen
+        Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht
+        kommerziellen Gebrauch gestattet.
+      </p>
+      <p>
+        Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte
+        Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie
+        trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden
+        Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.
+      </p>
+
+      <hr class="legal-divider">
+      <p style="font-size: 0.8rem; color: var(--color-text-muted);">
+        Stand: März 2026
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo" style="border-top: 1px solid var(--color-border-subtle); padding: var(--space-6) 0;">
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap: var(--space-4); align-items:center;">
+      <p class="footer__copy">© <span id="currentYear2"></span> Maly Development — Robin Maly</p>
+      <nav aria-label="Legal Links">
+        <a href="impressum.html" style="color: var(--color-accent-light); font-size: 0.875rem; margin-right: 1rem;">Impressum</a>
+        <a href="datenschutz.html" style="color: var(--color-text-muted); font-size: 0.875rem; transition: color 0.2s;">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('currentYear2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
