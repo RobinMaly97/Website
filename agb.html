@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AGB und Nutzungsbedingungen von Maly Development — Robin Maly, Freelance App-Entwickler">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>AGB — Maly Development</title>
+  <style>
+    .legal-page {
+      min-height: 100vh;
+      padding-top: calc(var(--nav-height) + var(--space-12));
+      padding-bottom: var(--space-24);
+    }
+    .legal-page .container { max-width: 800px; }
+    .legal-page h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-4xl);
+      font-weight: 800;
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-2);
+    }
+    .legal-page h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-top: var(--space-10);
+      margin-bottom: var(--space-3);
+    }
+    .legal-page h3 {
+      font-size: var(--text-base);
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin-top: var(--space-6);
+      margin-bottom: var(--space-2);
+    }
+    .legal-page p {
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: var(--space-4);
+    }
+    .legal-page ul {
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      margin-bottom: var(--space-4);
+      padding-left: var(--space-6);
+    }
+    .legal-page ul li { margin-bottom: var(--space-2); list-style: disc; }
+    .legal-page a { color: var(--color-accent-light); text-decoration: underline; text-underline-offset: 3px; }
+    .legal-page a:hover { color: var(--color-text-primary); }
+    .legal-meta {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-8);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-10);
+      transition: color var(--transition-fast);
+    }
+    .back-link:hover { color: var(--color-accent-light); }
+    .back-link svg { width: 16px; height: 16px; }
+    .legal-divider {
+      border: none;
+      border-top: 1px solid var(--color-border-subtle);
+      margin: var(--space-10) 0;
+    }
+    .legal-section-title {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      font-weight: 800;
+      color: var(--color-text-primary);
+      margin-top: var(--space-16);
+      margin-bottom: var(--space-2);
+      padding-top: var(--space-4);
+    }
+    .legal-notice-box {
+      background: rgba(99, 102, 241, 0.08);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 10px;
+      padding: var(--space-5) var(--space-6);
+      margin-bottom: var(--space-6);
+    }
+    .legal-notice-box p { margin-bottom: 0; }
+    .toc {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 10px;
+      padding: var(--space-5) var(--space-6);
+      margin-bottom: var(--space-10);
+    }
+    .toc p {
+      font-weight: 600;
+      font-size: var(--text-sm);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-3);
+    }
+    .toc ol {
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+      padding-left: var(--space-5);
+      margin: 0;
+    }
+    .toc ol li { margin-bottom: var(--space-1); list-style: decimal; }
+    .toc a { color: var(--color-text-muted); text-decoration: none; }
+    .toc a:hover { color: var(--color-accent-light); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="nav nav--scrolled" role="banner">
+    <div class="nav__container container">
+      <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="url(#logo-grad-agb)"/>
+          <defs>
+            <linearGradient id="logo-grad-agb" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#6366F1"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
+            </linearGradient>
+          </defs>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Space Grotesk, sans-serif" font-weight="800" font-size="13"
+                fill="white" letter-spacing="-0.5">MD</text>
+        </svg>
+        <span class="nav__logo-text">Maly Development</span>
+      </a>
+      <a href="/" class="btn btn--ghost btn--sm">← Zurück zur Website</a>
+    </div>
+  </header>
+
+  <main class="legal-page">
+    <div class="container">
+      <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
+        </svg>
+        Zurück zur Startseite
+      </a>
+
+      <!-- ═══════════════════════════════════════
+           TEIL 1: NUTZUNGSBEDINGUNGEN WEBSITE
+      ════════════════════════════════════════ -->
+      <h1 id="nutzungsbedingungen">Nutzungsbedingungen für die Website</h1>
+      <p class="legal-meta">Zuletzt aktualisiert: 13. März 2026 · Maly Development</p>
+
+      <div class="toc">
+        <p>Inhalt</p>
+        <ol>
+          <li><a href="#nb-1">Geltungsbereich und Zustimmung</a></li>
+          <li><a href="#nb-2">Nutzung der Website</a></li>
+          <li><a href="#nb-3">Inhalte und Urheberrechte</a></li>
+          <li><a href="#nb-4">Von Nutzern bereitgestellte Inhalte</a></li>
+          <li><a href="#nb-5">Verbotene Inhalte und Verhaltensweisen</a></li>
+          <li><a href="#nb-6">Haftungsausschluss für Website-Inhalte</a></li>
+          <li><a href="#nb-7">Haftungsbeschränkung</a></li>
+          <li><a href="#nb-8">Beendigung / Sperrung des Zugangs</a></li>
+          <li><a href="#nb-9">Anwendbares Recht und Gerichtsstand</a></li>
+          <li><a href="#nb-10">Cookie-Hinweis</a></li>
+        </ol>
+      </div>
+
+      <h2 id="nb-1">1. Geltungsbereich und Zustimmung</h2>
+      <p>(1) Diese Nutzungsbedingungen regeln die Nutzung der unter der Domain von Maly Development abrufbaren Website sowie etwaiger darüber bereitgestellter Online-Funktionen (z.B. Kontaktformular, Kundenbereich).</p>
+      <p>(2) Durch den Zugriff auf diese Website oder ihre Nutzung erklärst du dich mit diesen Nutzungsbedingungen einverstanden. Wenn du den Bedingungen nicht zustimmst, darfst du die Website nicht nutzen.</p>
+      <p>(3) Maly Development behält sich vor, diese Nutzungsbedingungen jederzeit mit Wirkung für die Zukunft zu ändern. Maßgeblich ist die jeweils auf der Website veröffentlichte Fassung mit dem dort angegebenen Datum.</p>
+
+      <h2 id="nb-2">2. Nutzung der Website</h2>
+      <p>(1) Die Website darf ausschließlich im Rahmen der gesetzlichen Bestimmungen und dieser Nutzungsbedingungen genutzt werden.</p>
+      <p>(2) Eine Nutzung zu rechtswidrigen Zwecken, zur Störung der Funktionsfähigkeit der Website oder zur unbefugten Erlangung von Daten ist untersagt.</p>
+      <p>(3) Soweit ein geschützter Bereich (z.B. Kundenportal) bereitgestellt wird, bist du verpflichtet, Zugangsdaten vertraulich zu behandeln und vor dem Zugriff unbefugter Dritter zu schützen.</p>
+
+      <h2 id="nb-3">3. Inhalte und Urheberrechte</h2>
+      <p>(1) Alle auf dieser Website veröffentlichten Inhalte – insbesondere Texte, Grafiken, Bilder, Designs und Software – sind urheberrechtlich geschützt und, soweit nicht anders gekennzeichnet, Eigentum von Robin Maly – Maly Development.</p>
+      <p>(2) Jede Verwendung, Vervielfältigung, Bearbeitung oder Weitergabe dieser Inhalte über die gesetzlich zulässige Nutzung hinaus bedarf der vorherigen ausdrücklichen schriftlichen Zustimmung von Maly Development.</p>
+      <p>(3) Marken, Logos und sonstige Kennzeichen Dritter werden nur zur Beschreibung genutzt und verbleiben im Eigentum der jeweiligen Rechteinhaber.</p>
+
+      <h2 id="nb-4">4. Von Nutzern bereitgestellte Inhalte</h2>
+      <p>(1) Soweit Nutzer Inhalte über Formulare, Upload-Funktionen oder ähnliche Features bereitstellen können („Benutzerinhalte"), versichern sie, zur Nutzung und Weitergabe dieser Inhalte berechtigt zu sein und keine Rechte Dritter zu verletzen.</p>
+      <p>(2) Der Nutzer stellt Maly Development von sämtlichen Ansprüchen Dritter frei, die auf einer rechtsverletzenden Nutzung der bereitgestellten Inhalte beruhen, einschließlich angemessener Rechtsverfolgungskosten.</p>
+      <p>(3) Maly Development ist berechtigt, Benutzerinhalte, die gegen diese Nutzungsbedingungen oder geltendes Recht verstoßen, jederzeit zu sperren oder zu löschen.</p>
+
+      <h2 id="nb-5">5. Verbotene Inhalte und Verhaltensweisen</h2>
+      <p>Es ist insbesondere untersagt, über die Website Inhalte zu übermitteln, die:</p>
+      <ul>
+        <li>Rechte Dritter (z.B. Urheber-, Marken-, Persönlichkeitsrechte) verletzen,</li>
+        <li>gegen geltendes Recht verstoßen oder zu Rechtsverletzungen anstiften,</li>
+        <li>betrügerisch, irreführend oder täuschend sind,</li>
+        <li>verleumderisch, obszön, pornografisch, vulgär oder beleidigend sind,</li>
+        <li>Diskriminierung, Rassismus, Hass, Belästigung oder Gewalt fördern,</li>
+        <li>Sicherheitsmechanismen der Website umgehen oder technische Störungen verursachen.</li>
+      </ul>
+
+      <h2 id="nb-6">6. Haftungsausschluss für Website-Inhalte</h2>
+      <p>(1) Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Eine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch nicht übernommen.</p>
+      <p>(2) Maly Development haftet für Schäden aus der Nutzung oder Nichtnutzung der Website nur nach Maßgabe von Ziffer 7 (Haftungsbeschränkung).</p>
+      <p>(3) Diese Website enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte Maly Development keinen Einfluss hat. Für diese fremden Inhalte wird keine Gewähr übernommen; verantwortlich ist jeweils der Anbieter oder Betreiber der Seiten. Bei Kenntnis von Rechtsverletzungen werden entsprechende Links umgehend entfernt.</p>
+
+      <h2 id="nb-7">7. Haftungsbeschränkung</h2>
+      <p>(1) Maly Development haftet auf Schadensersatz – gleich aus welchem Rechtsgrund – nur bei:</p>
+      <ul>
+        <li>Vorsatz oder grober Fahrlässigkeit,</li>
+        <li>Verletzung von Leben, Körper oder Gesundheit,</li>
+        <li>Verletzung wesentlicher Vertragspflichten (Kardinalpflichten), deren Erfüllung die ordnungsgemäße Nutzung der Website überhaupt erst ermöglicht und auf deren Einhaltung der Nutzer regelmäßig vertrauen darf.</li>
+      </ul>
+      <p>(2) Bei leicht fahrlässiger Verletzung von Kardinalpflichten ist die Haftung auf den typischerweise vorhersehbaren Schaden begrenzt.</p>
+      <p>(3) Eine weitergehende Haftung, insbesondere für mittelbare Schäden, entgangenen Gewinn oder Datenverluste, ist ausgeschlossen, soweit gesetzlich zulässig.</p>
+      <p>(4) Zwingende gesetzliche Haftungsvorschriften (z.B. nach dem Produkthaftungsgesetz) bleiben unberührt.</p>
+
+      <h2 id="nb-8">8. Beendigung / Sperrung des Zugangs</h2>
+      <p>Maly Development kann den Zugang zur Website oder zu einzelnen Funktionen jederzeit einschränken oder einstellen, insbesondere bei Wartungsarbeiten, Sicherheitsgründen oder bei Verstößen gegen diese Nutzungsbedingungen. Ein Anspruch auf ständige Verfügbarkeit der Website besteht nicht.</p>
+
+      <h2 id="nb-9">9. Anwendbares Recht und Gerichtsstand</h2>
+      <p>(1) Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p>
+      <p>(2) Ist der Nutzer Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist – soweit gesetzlich zulässig – der Sitz von Robin Maly ausschließlicher Gerichtsstand.</p>
+      <p>(3) Gesetzlich zwingende Verbraucherrechte bleiben unberührt.</p>
+
+      <h2 id="nb-10">10. Cookie-Hinweis</h2>
+      <div class="legal-notice-box">
+        <p>Unsere Website verwendet nach aktuellem Stand keine Cookies, die einer Einwilligung bedürfen (insbesondere keine Tracking-, Analyse- oder Marketing-Cookies). Soweit technisch notwendige Technologien eingesetzt werden, erfolgt dies ausschließlich zur Bereitstellung der Website und ihrer Grundfunktionen.</p>
+      </div>
+      <p>Weitere Informationen findest du in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+
+      <hr class="legal-divider">
+
+      <!-- ═══════════════════════════════════════
+           TEIL 2: AGB FÜR ENTWICKLUNGSLEISTUNGEN
+      ════════════════════════════════════════ -->
+      <h2 class="legal-section-title" id="agb-entwicklung">Allgemeine Geschäftsbedingungen (AGB) für Entwicklungsleistungen</h2>
+      <p class="legal-meta">Robin Maly – Maly Development · Hasselkamp 13, 45481 Mülheim an der Ruhr</p>
+
+      <div class="toc">
+        <p>Inhalt</p>
+        <ol>
+          <li><a href="#agb-1">Geltungsbereich</a></li>
+          <li><a href="#agb-2">Vertragsschluss</a></li>
+          <li><a href="#agb-3">Leistungsumfang</a></li>
+          <li><a href="#agb-4">Mitwirkungspflichten des Auftraggebers</a></li>
+          <li><a href="#agb-5">Vergütung und Zahlungsbedingungen</a></li>
+          <li><a href="#agb-6">Termine und Verzögerungen</a></li>
+          <li><a href="#agb-7">Abnahme</a></li>
+          <li><a href="#agb-8">Nutzungsrechte</a></li>
+          <li><a href="#agb-9">Gewährleistung</a></li>
+          <li><a href="#agb-10">Haftung</a></li>
+          <li><a href="#agb-11">Vertraulichkeit und Datenschutz</a></li>
+          <li><a href="#agb-12">Laufzeit und Kündigung</a></li>
+          <li><a href="#agb-13">Schlussbestimmungen</a></li>
+        </ol>
+      </div>
+
+      <h2 id="agb-1">1. Geltungsbereich</h2>
+      <p>(1) Diese AGB gelten für alle Verträge zwischen Maly Development und seinen Auftraggebern über die Erbringung von Entwicklungs-, Design-, Beratungs- und sonstigen IT-Dienstleistungen (z.B. Web- und App-Entwicklung), soweit nicht ausdrücklich etwas anderes vereinbart ist.</p>
+      <p>(2) Die AGB gelten ausschließlich gegenüber Unternehmern im Sinne von § 14 BGB, juristischen Personen des öffentlichen Rechts und öffentlich-rechtlichen Sondervermögen.</p>
+
+      <h2 id="agb-2">2. Vertragsschluss</h2>
+      <p>(1) Angebote von Maly Development sind freibleibend, sofern sie nicht ausdrücklich als verbindlich gekennzeichnet sind.</p>
+      <p>(2) Ein Vertrag kommt zustande, wenn der Auftraggeber ein Angebot von Maly Development schriftlich oder in Textform (z.B. E-Mail) annimmt oder wenn Maly Development mit der Ausführung der Leistung beginnt.</p>
+
+      <h2 id="agb-3">3. Leistungsumfang</h2>
+      <p>(1) Art und Umfang der geschuldeten Leistungen ergeben sich aus dem jeweiligen Angebot, Projektvertrag, Pflichtenheft oder einer sonstigen schriftlichen Leistungsbeschreibung.</p>
+      <p>(2) Änderungs- und Erweiterungswünsche des Auftraggebers nach Vertragsschluss bedürfen einer gesonderten Vereinbarung und können zu Anpassungen von Vergütung und Terminen führen.</p>
+      <p>(3) Maly Development erbringt die Leistungen in eigener Verantwortung und nach eigenem technischen Ermessen, unter Berücksichtigung der vereinbarten Anforderungen.</p>
+
+      <h2 id="agb-4">4. Mitwirkungspflichten des Auftraggebers</h2>
+      <p>(1) Der Auftraggeber stellt alle für die Durchführung des Projekts erforderlichen Informationen, Inhalte (z.B. Texte, Bilder, Logos) und Zugänge rechtzeitig, vollständig und in geeigneter Form zur Verfügung.</p>
+      <p>(2) Der Auftraggeber ist für die Rechte an den von ihm gelieferten Inhalten selbst verantwortlich und stellt Maly Development insoweit von allen Ansprüchen Dritter frei.</p>
+      <p>(3) Verzögert sich die Leistungserbringung aufgrund fehlender oder verspäteter Mitwirkung des Auftraggebers, verlängern sich vereinbarte Fristen angemessen. Zusätzlich entstehende Aufwände können gesondert berechnet werden.</p>
+
+      <h2 id="agb-5">5. Vergütung und Zahlungsbedingungen</h2>
+      <p>(1) Die Vergütung ergibt sich aus dem jeweiligen Angebot (Stundensätze, Tagessätze oder Festpreise). Alle angegebenen Preise verstehen sich zuzüglich der gesetzlichen Umsatzsteuer, soweit anwendbar.</p>
+      <p>(2) Soweit nicht anders vereinbart, werden Leistungen nach Aufwand abgerechnet. Maly Development ist berechtigt, angemessene Vorschuss- oder Abschlagszahlungen zu verlangen.</p>
+      <p>(3) Rechnungen sind, sofern nicht anders angegeben, innerhalb von 14 Tagen nach Zugang ohne Abzug fällig. Bei Zahlungsverzug ist Maly Development berechtigt, gesetzliche Verzugszinsen zu verlangen und weitere Leistungen bis zur Zahlung zurückzuhalten.</p>
+
+      <h2 id="agb-6">6. Termine und Verzögerungen</h2>
+      <p>(1) Leistungs- und Fertigstellungstermine sind nur verbindlich, wenn sie ausdrücklich als solche vereinbart wurden.</p>
+      <p>(2) Kommt es zu Verzögerungen aufgrund höherer Gewalt, technischer Störungen, die nicht im Verantwortungsbereich von Maly Development liegen, oder aufgrund nicht oder verspätet erbrachter Mitwirkung des Auftraggebers, verschieben sich Termine entsprechend. Schadensersatzansprüche wegen solcher Verzögerungen sind ausgeschlossen.</p>
+
+      <h2 id="agb-7">7. Abnahme</h2>
+      <p>(1) Soweit die Leistungen werkvertraglichen Charakter haben (z.B. Erstellung einer Website oder App), ist der Auftraggeber zur Abnahme verpflichtet.</p>
+      <p>(2) Maly Development kann nach Fertigstellung eine Abnahme innerhalb einer angemessenen Frist verlangen. Die Abnahme darf bei nur unwesentlichen Mängeln nicht verweigert werden.</p>
+      <p>(3) Eine Leistung gilt nach einer angemessenen Frist und Inbetriebnahme durch den Auftraggeber als abgenommen, wenn keine wesentlichen Mängel gerügt werden.</p>
+
+      <h2 id="agb-8">8. Nutzungsrechte</h2>
+      <p>(1) Sofern nicht ausdrücklich anders vereinbart, räumt Maly Development dem Auftraggeber nach vollständiger Zahlung ein einfaches, nicht ausschließliches, zeitlich und räumlich unbeschränktes Nutzungsrecht an den im Rahmen des Projekts erstellten Arbeitsergebnissen ein, soweit dies zur vertraglich vorgesehenen Nutzung erforderlich ist.</p>
+      <p>(2) Eine Übertragung der Nutzungsrechte auf Dritte oder Nutzung für andere als die vertraglich vereinbarten Zwecke bedarf einer gesonderten Vereinbarung.</p>
+      <p>(3) Maly Development bleibt Urheber der erstellten Werke und ist berechtigt, die Ergebnisse in angemessenem Umfang als Referenz zu nennen, sofern der Auftraggeber dem nicht aus wichtigem Grund widerspricht.</p>
+
+      <h2 id="agb-9">9. Gewährleistung</h2>
+      <p>(1) Für werkvertragliche Leistungen gelten die gesetzlichen Gewährleistungsrechte, soweit nachfolgend nichts anderes geregelt ist.</p>
+      <p>(2) Der Auftraggeber hat Leistungen nach Bereitstellung unverzüglich zu prüfen und erkennbare Mängel unverzüglich anzuzeigen.</p>
+      <p>(3) Maly Development ist zunächst zur Nacherfüllung (Mangelbeseitigung oder Ersatzlieferung) berechtigt. Schlägt die Nacherfüllung fehl, kann der Auftraggeber nach den gesetzlichen Vorschriften mindern oder vom Vertrag zurücktreten.</p>
+
+      <h2 id="agb-10">10. Haftung</h2>
+      <p>(1) Maly Development haftet unbeschränkt bei Vorsatz und grober Fahrlässigkeit, sowie bei Verletzung von Leben, Körper oder Gesundheit.</p>
+      <p>(2) Bei leichter Fahrlässigkeit haftet Maly Development nur bei Verletzung wesentlicher Vertragspflichten (Kardinalpflichten). In diesem Fall ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt.</p>
+      <p>(3) Eine Haftung für mittelbare Schäden, entgangenen Gewinn, ausgebliebene Einsparungen sowie sonstige Vermögensschäden ist ausgeschlossen, soweit gesetzlich zulässig.</p>
+      <p>(4) Für den Verlust von Daten haftet Maly Development nur, soweit der Auftraggeber durch geeignete und regelmäßige Datensicherungen sichergestellt hat, dass die Daten mit vertretbarem Aufwand wiederhergestellt werden können.</p>
+      <p>(5) Die Haftungsbeschränkungen gelten nicht, soweit zwingende gesetzliche Regelungen entgegenstehen (z.B. Produkthaftungsgesetz).</p>
+
+      <h2 id="agb-11">11. Vertraulichkeit und Datenschutz</h2>
+      <p>(1) Beide Vertragsparteien verpflichten sich, ihnen im Rahmen des Vertrags bekannt werdende vertrauliche Informationen der jeweils anderen Partei geheim zu halten und sie nur für die vertraglich vereinbarten Zwecke zu verwenden.</p>
+      <p>(2) Maly Development verarbeitet personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Bestimmungen (insbesondere DSGVO) und der jeweils gültigen <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+
+      <h2 id="agb-12">12. Laufzeit und Kündigung</h2>
+      <p>(1) Projektverträge enden mit Erbringung der geschuldeten Leistung und ggf. Abnahme.</p>
+      <p>(2) Dauerschuldverhältnisse (z.B. Wartungs- oder Supportverträge) können vorbehaltlich abweichender Vereinbarungen mit einer Frist von 4 Wochen zum Monatsende gekündigt werden.</p>
+      <p>(3) Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt. Ein wichtiger Grund liegt insbesondere vor, wenn eine Partei trotz Abmahnung schuldhaft gegen wesentliche Vertragspflichten verstößt.</p>
+
+      <h2 id="agb-13">13. Schlussbestimmungen</h2>
+      <p>(1) Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts.</p>
+      <p>(2) Ausschließlicher Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist – soweit gesetzlich zulässig – der Sitz von Maly Development.</p>
+      <p>(3) Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
+
+      <hr class="legal-divider">
+      <p style="font-size: 0.8rem; color: var(--color-text-muted);">Stand: März 2026</p>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo" style="border-top: 1px solid var(--color-border-subtle); padding: var(--space-6) 0;">
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap: var(--space-4); align-items:center;">
+      <p class="footer__copy">© <span id="currentYear2"></span> Maly Development — Robin Maly</p>
+      <nav aria-label="Legal Links">
+        <a href="impressum.html" style="color: var(--color-text-muted); font-size: 0.875rem; margin-right: 1rem;">Impressum</a>
+        <a href="datenschutz.html" style="color: var(--color-text-muted); font-size: 0.875rem; margin-right: 1rem;">Datenschutz</a>
+        <a href="agb.html" style="color: var(--color-accent-light); font-size: 0.875rem;">AGB</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('currentYear2').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

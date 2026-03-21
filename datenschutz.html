@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Datenschutzerklärung von Maly Development — Robin Maly">
+  <meta name="description" content="Datenschutzerklärung von Maly Development — Robin Maly, Freelance App-Entwickler">
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,11 @@
       font-size: var(--text-4xl);
       font-weight: 800;
       color: var(--color-text-primary);
+      margin-bottom: var(--space-2);
+    }
+    .legal-meta {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
       margin-bottom: var(--space-8);
     }
     .legal-page h2 {
@@ -65,6 +70,28 @@
       border-top: 1px solid var(--color-border-subtle);
       margin: var(--space-8) 0;
     }
+    .toc {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-border-subtle);
+      border-radius: 10px;
+      padding: var(--space-5) var(--space-6);
+      margin-bottom: var(--space-10);
+    }
+    .toc p {
+      font-weight: 600;
+      font-size: var(--text-sm);
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-3);
+    }
+    .toc ol {
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+      padding-left: var(--space-5);
+      margin: 0;
+    }
+    .toc ol li { margin-bottom: var(--space-1); list-style: decimal; }
+    .toc a { color: var(--color-text-muted); text-decoration: none; }
+    .toc a:hover { color: var(--color-accent-light); text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -80,7 +107,7 @@
             </linearGradient>
           </defs>
           <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                font-family="Syne, sans-serif" font-weight="800" font-size="13"
+                font-family="Space Grotesk, sans-serif" font-weight="800" font-size="13"
                 fill="white" letter-spacing="-0.5">MD</text>
         </svg>
         <span class="nav__logo-text">Maly Development</span>
@@ -99,133 +126,98 @@
       </a>
 
       <h1>Datenschutzerklärung</h1>
+      <p class="legal-meta">Stand: März 2026 · Maly Development</p>
 
-      <h2>1. Verantwortlicher</h2>
+      <div class="toc">
+        <p>Inhalt</p>
+        <ol>
+          <li><a href="#ds-1">Verantwortlicher</a></li>
+          <li><a href="#ds-2">Allgemeine Hinweise zur Datenverarbeitung</a></li>
+          <li><a href="#ds-3">Server-Log-Dateien beim Besuch der Website</a></li>
+          <li><a href="#ds-4">Kontaktformular</a></li>
+          <li><a href="#ds-5">Webfonts (Google Fonts)</a></li>
+          <li><a href="#ds-6">Lokaler Speicher (localStorage)</a></li>
+          <li><a href="#ds-7">Einsatz weiterer Dienste</a></li>
+          <li><a href="#ds-8">Deine Rechte</a></li>
+          <li><a href="#ds-9">Recht auf Beschwerde bei einer Aufsichtsbehörde</a></li>
+          <li><a href="#ds-10">Widerruf von Einwilligungen</a></li>
+          <li><a href="#ds-11">Aktualität und Änderung dieser Datenschutzerklärung</a></li>
+        </ol>
+      </div>
+
+      <h2 id="ds-1">1. Verantwortlicher</h2>
+      <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
       <address>
         Robin Maly<br>
         Maly Development<br>
-        <!-- TODO: Vollständige Adresse eintragen -->
-        [Straße und Hausnummer]<br>
-        [PLZ] [Ort]<br>
+        Hasselkamp 13<br>
+        45481 Mülheim an der Ruhr<br>
         Deutschland<br>
         E-Mail: <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a>
       </address>
 
-      <h2>2. Erhebung und Verarbeitung personenbezogener Daten</h2>
+      <h2 id="ds-2">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+      <p>(1) Der Schutz deiner personenbezogenen Daten ist Maly Development wichtig. Personenbezogene Daten werden ausschließlich im Rahmen der gesetzlichen Bestimmungen verarbeitet, insbesondere der DSGVO und des BDSG.</p>
+      <p>(2) In dieser Datenschutzerklärung informieren wir dich darüber, welche Daten bei der Nutzung dieser Website verarbeitet werden und welche Rechte dir zustehen.</p>
 
-      <h3>2.1 Beim Besuch der Website</h3>
-      <p>
-        Beim Aufrufen dieser Website werden durch den Hosting-Anbieter automatisch Informationen
-        in sogenannten Server-Log-Dateien gespeichert, die Ihr Browser übermittelt. Dies sind:
-      </p>
+      <h2 id="ds-3">3. Server-Log-Dateien beim Besuch der Website</h2>
+      <p>(1) Beim Aufrufen dieser Website werden automatisch bestimmte Informationen durch den Hosting-Anbieter in sogenannten Server-Log-Dateien gespeichert, die dein Browser übermittelt. Dies sind insbesondere:</p>
       <ul>
         <li>Browsertyp und -version</li>
         <li>Verwendetes Betriebssystem</li>
-        <li>Referrer-URL (die zuvor besuchte Seite)</li>
+        <li>Referrer-URL (zuvor besuchte Seite)</li>
         <li>Hostname des zugreifenden Rechners</li>
         <li>Uhrzeit der Serveranfrage</li>
         <li>IP-Adresse</li>
       </ul>
-      <p>
-        Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten
-        mit anderen Datenquellen wird nicht vorgenommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO
-        (berechtigtes Interesse an einem sicheren und stabilen Betrieb der Website).
-      </p>
+      <p>(2) Eine Zuordnung dieser Daten zu bestimmten Personen erfolgt nicht. Eine Zusammenführung mit anderen Datenquellen findet nicht statt.</p>
+      <p>(3) Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren und stabilen Betrieb der Website, Fehleranalyse und Abwehr von Angriffen).</p>
+      <p>(4) Die Log-Dateien werden für einen Zeitraum von 30 Tagen gespeichert und anschließend gelöscht, sofern keine weitergehende Aufbewahrung zu Beweiszwecken im Einzelfall erforderlich ist.</p>
 
-      <h3>2.2 Kontaktformular</h3>
-      <p>
-        Wenn du das Kontaktformular auf dieser Website nutzt, werden die von dir eingegebenen Daten
-        (Name, E-Mail-Adresse, Betreff und Nachricht) zum Zweck der Bearbeitung der Anfrage und für den
-        Fall von Anschlussfragen bei mir gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung
-        weiter.
-      </p>
-      <p>
-        Rechtsgrundlagen: Art. 6 Abs. 1 lit. b DSGVO (Anbahnung eines Vertragsverhältnisses)
-        und Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch aktives Setzen des Häkchens).
-      </p>
-      <p>
-        Die Übermittlung der Formulardaten erfolgt über den Dienst <strong>Netlify Forms</strong>
-        (Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA).
-        Netlify verarbeitet die Daten auf Servern in den USA. Es besteht ein
-        Data Processing Agreement (DPA) mit Netlify, das einen angemessenen Datenschutz sicherstellt.
-        Weitere Informationen findest du unter
-        <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">
-          netlify.com/privacy
-        </a>.
-      </p>
+      <h2 id="ds-4">4. Kontaktformular</h2>
+      <p>(1) Wenn du das Kontaktformular auf dieser Website nutzt, werden die von dir eingegebenen Daten (Name, E-Mail-Adresse, Betreff und Nachricht) zum Zweck der Bearbeitung deiner Anfrage und für den Fall von Anschlussfragen verarbeitet.</p>
+      <p>(2) Rechtsgrundlagen sind Art. 6 Abs. 1 lit. b DSGVO (Anbahnung oder Durchführung eines Vertragsverhältnisses) sowie Art. 6 Abs. 1 lit. a DSGVO (deine Einwilligung, z.B. durch aktives Setzen eines Häkchens).</p>
+      <p>(3) Die Übermittlung der Formulardaten erfolgt über den Dienst „Netlify Forms" (Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA). Netlify verarbeitet die Daten auf Servern in den USA. Es besteht ein Auftragsverarbeitungsvertrag (Data Processing Agreement) mit Netlify. Soweit Daten in ein Drittland übertragen werden, erfolgt dies auf Grundlage geeigneter Garantien (z.B. Standardvertragsklauseln der EU-Kommission). Weitere Informationen findest du unter <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">netlify.com/privacy</a>.</p>
+      <p>(4) Die im Rahmen des Kontaktformulars verarbeiteten Daten werden gelöscht, sobald deine Anfrage abschließend beantwortet ist und keine weitere Kommunikation mit dir erforderlich ist, spätestens jedoch nach 2 Jahren, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
 
-      <h3>2.3 Speicherdauer</h3>
-      <p>
-        Die über das Kontaktformular übermittelten Daten werden gelöscht, sobald die Anfrage
-        vollständig bearbeitet wurde und keine weitere Kommunikation mit dir erforderlich ist,
-        spätestens jedoch nach 2 Jahren.
-      </p>
+      <h2 id="ds-5">5. Webfonts (Google Fonts)</h2>
+      <p>(1) Diese Website verwendet Schriftarten („Google Fonts") des Anbieters Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Beim Aufruf einer Seite lädt dein Browser die erforderlichen Webfonts von den Servern von Google, wodurch deine IP-Adresse und ggf. weitere technische Informationen an Google übertragen werden.</p>
+      <p>(2) Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen und ansprechenden Darstellung der Website).</p>
+      <p>(3) Weitere Informationen zum Umgang mit Nutzerdaten findest du unter <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener noreferrer">developers.google.com/fonts/faq/privacy</a> und in der allgemeinen Datenschutzerklärung von Google unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
 
-      <h2>3. Webfonts (Google Fonts)</h2>
-      <p>
-        Diese Website verwendet Google Fonts, einen Dienst der Google Ireland Limited,
-        Gordon House, Barrow Street, Dublin 4, Irland.
-        Beim Laden der Seite wird eine Verbindung zu den Servern von Google hergestellt,
-        wodurch deine IP-Adresse an Google übertragen wird.
-      </p>
-      <p>
-        Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem
-        einheitlichen und ansprechenden Erscheinungsbild der Website).
-        Weitere Informationen zum Umgang mit Nutzerdaten bei Google Fonts findest du unter:
-        <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener noreferrer">
-          developers.google.com/fonts/faq/privacy
-        </a>
-      </p>
+      <h2 id="ds-6">6. Lokaler Speicher (localStorage)</h2>
+      <p>(1) Diese Website verwendet den sogenannten localStorage deines Browsers, um deine bevorzugte Sprache (Deutsch oder Englisch) zu speichern.</p>
+      <p>(2) Dabei werden lediglich technische Einstellungen ohne Personenbezug gespeichert. Es werden weder Tracking-Daten erhoben noch personenbezogene Profile erstellt.</p>
+      <p>(3) Eine Einwilligung ist hierfür nach § 25 Abs. 2 Nr. 2 TTDSG nicht erforderlich, da es sich um eine technisch notwendige Funktion zur Bereitstellung der Website handelt.</p>
 
-      <h2>4. Lokaler Speicher (localStorage)</h2>
-      <p>
-        Diese Website speichert deine bevorzugte Sprache (Deutsch oder Englisch) im sogenannten
-        <em>localStorage</em> deines Browsers. Dabei handelt es sich um rein technisch notwendige
-        Daten, die keine personenbezogenen Informationen enthalten. Es werden keine Tracking-Cookies
-        gesetzt. Eine Einwilligung ist hierfür nicht erforderlich (§ 25 Abs. 2 Nr. 2 TTDSG).
-      </p>
+      <h2 id="ds-7">7. Einsatz weiterer Dienste</h2>
+      <p>Derzeit werden keine weiteren Analyse- oder Tracking-Dienste sowie keine eingebetteten Dienste Dritter (z.B. YouTube, Google Maps) eingesetzt.</p>
 
-      <h2>5. Deine Rechte</h2>
-      <p>Du hast gegenüber mir folgende Rechte hinsichtlich der dich betreffenden personenbezogenen Daten:</p>
+      <h2 id="ds-8">8. Deine Rechte</h2>
+      <p>Du hast gegenüber uns hinsichtlich der dich betreffenden personenbezogenen Daten die folgenden Rechte:</p>
       <ul>
-        <li><strong>Auskunftsrecht</strong> (Art. 15 DSGVO)</li>
+        <li><strong>Recht auf Auskunft</strong> (Art. 15 DSGVO)</li>
         <li><strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO)</li>
         <li><strong>Recht auf Löschung</strong> (Art. 17 DSGVO)</li>
         <li><strong>Recht auf Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
         <li><strong>Recht auf Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
-        <li><strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)</li>
+        <li><strong>Recht auf Widerspruch gegen die Verarbeitung</strong> (Art. 21 DSGVO)</li>
       </ul>
-      <p>
-        Zur Ausübung deiner Rechte wende dich bitte an:
-        <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a>
-      </p>
+      <p>Zur Ausübung deiner Rechte kannst du dich jederzeit an <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a> wenden.</p>
 
-      <h2>6. Recht auf Beschwerde bei einer Aufsichtsbehörde</h2>
-      <p>
-        Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung
-        deiner personenbezogenen Daten zu beschweren. Die zuständige Aufsichtsbehörde richtet sich
-        nach deinem Wohnsitz oder dem Ort der mutmaßlichen Verletzung.
-      </p>
-      <p>
-        Eine Liste der deutschen Datenschutzbehörden findest du unter:
-        <a href="https://www.bfdi.bund.de" target="_blank" rel="noopener noreferrer">
-          bfdi.bund.de
-        </a>
-      </p>
+      <h2 id="ds-9">9. Recht auf Beschwerde bei einer Aufsichtsbehörde</h2>
+      <p>Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung deiner personenbezogenen Daten zu beschweren. Zuständig ist insbesondere die Aufsichtsbehörde deines gewöhnlichen Aufenthaltsortes, deines Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes.</p>
+      <p>Eine Übersicht der deutschen Aufsichtsbehörden findest du unter <a href="https://www.bfdi.bund.de/" target="_blank" rel="noopener noreferrer">bfdi.bund.de</a>.</p>
 
-      <h2>7. Widerruf deiner Einwilligung zur Datenverarbeitung</h2>
-      <p>
-        Viele Datenverarbeitungsvorgänge sind nur mit deiner ausdrücklichen Einwilligung möglich.
-        Du kannst eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit
-        der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
-        Wende dich für den Widerruf bitte an:
-        <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a>
-      </p>
+      <h2 id="ds-10">10. Widerruf von Einwilligungen</h2>
+      <p>Soweit die Verarbeitung deiner Daten auf einer Einwilligung beruht, kannst du diese Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt hiervon unberührt.</p>
+      <p>Für den Widerruf genügt eine formlose Mitteilung per E-Mail an <a href="mailto:robin@malydevelopment.de">robin@malydevelopment.de</a>.</p>
+
+      <h2 id="ds-11">11. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+      <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand März 2026. Durch die Weiterentwicklung der Website oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann eine Anpassung dieser Erklärung erforderlich werden. Die jeweils aktuelle Fassung ist jederzeit auf dieser Website abrufbar.</p>
 
       <hr class="legal-divider">
-      <p style="font-size: 0.8rem; color: var(--color-text-muted);">
-        Stand: März 2026
-      </p>
+      <p style="font-size: 0.8rem; color: var(--color-text-muted);">Stand: März 2026</p>
     </div>
   </main>
 
@@ -234,7 +226,8 @@
       <p class="footer__copy">© <span id="currentYear3"></span> Maly Development — Robin Maly</p>
       <nav aria-label="Legal Links">
         <a href="impressum.html" style="color: var(--color-text-muted); font-size: 0.875rem; margin-right: 1rem;">Impressum</a>
-        <a href="datenschutz.html" style="color: var(--color-accent-light); font-size: 0.875rem;">Datenschutz</a>
+        <a href="datenschutz.html" style="color: var(--color-accent-light); font-size: 0.875rem; margin-right: 1rem;">Datenschutz</a>
+        <a href="agb.html" style="color: var(--color-text-muted); font-size: 0.875rem;">AGB</a>
       </nav>
     </div>
   </footer>

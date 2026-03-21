@@ -834,7 +834,7 @@ input, textarea, select { font-family: inherit; }
   background: linear-gradient(160deg, #0a0f1e 0%, #0d1530 50%, #12113a 100%);
   border-bottom: 1px solid var(--color-border-subtle);
   overflow: hidden;
-  height: 340px;
+  height: 440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -844,8 +844,8 @@ input, textarea, select { font-family: inherit; }
 /* ─── iPhone Mockup ────────────────────────────────────── */
 .iphone {
   position: relative;
-  width: 148px;
-  height: 300px;
+  width: 210px;
+  height: 425px;
   flex-shrink: 0;
 }
 
@@ -897,6 +897,7 @@ input, textarea, select { font-family: inherit; }
   border-radius: 30px;
   overflow: hidden;
   background: #000;
+  transform: translateZ(0);
 }
 
 /* Screenshot stretches to fill the entire screen — no gaps, no letterboxing */
