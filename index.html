@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Maly Development — Freelance App-Entwickler aus Deutschland. iOS, Android und Full-Stack Entwicklung. Deine Idee. Mein Code.">
+  <meta name="description"
+    content="Maly Development — Freelance App-Entwickler aus Deutschland. iOS, Android und Full-Stack Entwicklung. Deine Idee. Mein Code.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://malydevelopment.de/">
 
@@ -11,7 +13,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://malydevelopment.de/">
   <meta property="og:title" content="Maly Development — App-Entwicklung & Software-Freelancer">
-  <meta property="og:description" content="Robin Maly — Freelance App-Entwickler aus Deutschland. iOS, Android & Full-Stack Entwicklung. Deine Idee. Mein Code.">
+  <meta property="og:description"
+    content="Robin Maly — Freelance App-Entwickler aus Deutschland. iOS, Android & Full-Stack Entwicklung. Deine Idee. Mein Code.">
   <meta property="og:image" content="https://malydevelopment.de/og-image.jpg">
   <meta property="og:locale" content="de_DE">
 
@@ -24,687 +27,706 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <title>Maly Development — App-Entwicklung & Software-Freelancer</title>
 </head>
+
 <body>
 
-<!-- ═══════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════
      NAVIGATION
 ════════════════════════════════════════════════════════ -->
-<header class="nav" id="nav" role="banner">
-  <div class="nav__container container">
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__container container">
 
-    <!-- Logo -->
-    <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="36" rx="9" fill="url(#logo-grad)"/>
-        <defs>
-          <linearGradient id="logo-grad" x1="0" y1="0" x2="36" y2="36">
-            <stop offset="0%" stop-color="#6366F1"/>
-            <stop offset="100%" stop-color="#3B82F6"/>
-          </linearGradient>
-        </defs>
-        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-              font-family="Syne, sans-serif" font-weight="800" font-size="13"
-              fill="white" letter-spacing="-0.5">MD</text>
-      </svg>
-      <span class="nav__logo-text">Maly Development</span>
-    </a>
+      <!-- Logo -->
+      <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="9" fill="url(#logo-grad)" />
+          <defs>
+            <linearGradient id="logo-grad" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#6366F1" />
+              <stop offset="100%" stop-color="#3B82F6" />
+            </linearGradient>
+          </defs>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Syne, sans-serif"
+            font-weight="800" font-size="13" fill="white" letter-spacing="-0.5">MD</text>
+        </svg>
+        <span class="nav__logo-text">Maly Development</span>
+      </a>
 
-    <!-- Desktop links -->
-    <nav class="nav__links" aria-label="Hauptnavigation">
-      <a class="nav__link" href="#about"    data-de="Über mich"  data-en="About">Über mich</a>
-      <a class="nav__link" href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
-      <a class="nav__link" href="#projects" data-de="Projekte"   data-en="Projects">Projekte</a>
-      <a class="nav__link" href="#process"  data-de="Vorgehen"   data-en="Process">Vorgehen</a>
-      <a class="nav__link" href="#contact"  data-de="Kontakt"    data-en="Contact">Kontakt</a>
-    </nav>
+      <!-- Desktop links -->
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a class="nav__link" href="#about" data-de="Über mich" data-en="About">Über mich</a>
+        <a class="nav__link" href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
+        <a class="nav__link" href="#projects" data-de="Projekte" data-en="Projects">Projekte</a>
+        <a class="nav__link" href="#process" data-de="Vorgehen" data-en="Process">Vorgehen</a>
+        <a class="nav__link" href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
+      </nav>
 
-    <!-- Actions: language toggle + CTA -->
-    <div class="nav__actions">
-      <button class="nav__lang-toggle" id="langToggle" aria-label="Sprache wechseln / Switch language" type="button">
-        <span class="nav__lang-option is-active" data-lang="de">DE</span>
-        <span class="nav__lang-divider" aria-hidden="true">|</span>
-        <span class="nav__lang-option" data-lang="en">EN</span>
+      <!-- Actions: language toggle + CTA -->
+      <div class="nav__actions">
+        <button class="nav__lang-toggle" id="langToggle" aria-label="Sprache wechseln / Switch language" type="button">
+          <span class="nav__lang-option is-active" data-lang="de">DE</span>
+          <span class="nav__lang-divider" aria-hidden="true">|</span>
+          <span class="nav__lang-option" data-lang="en">EN</span>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm" data-de="Kontakt" data-en="Contact">Kontakt</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" id="navHamburger" aria-expanded="false" aria-controls="navMobileMenu"
+        aria-label="Menü öffnen" type="button">
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
       </button>
-      <a href="#contact" class="btn btn--primary btn--sm" data-de="Kontakt" data-en="Contact">Kontakt</a>
     </div>
 
-    <!-- Mobile hamburger -->
-    <button class="nav__hamburger" id="navHamburger"
-            aria-expanded="false" aria-controls="navMobileMenu"
-            aria-label="Menü öffnen" type="button">
-      <span class="nav__hamburger-bar"></span>
-      <span class="nav__hamburger-bar"></span>
-      <span class="nav__hamburger-bar"></span>
-    </button>
-  </div>
-
-  <!-- Mobile menu -->
-  <div class="nav__mobile-menu" id="navMobileMenu" aria-hidden="true" role="navigation" aria-label="Mobile Navigation">
-    <a class="nav__mobile-link" href="#about"    data-de="Über mich"  data-en="About">Über mich</a>
-    <a class="nav__mobile-link" href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
-    <a class="nav__mobile-link" href="#projects" data-de="Projekte"   data-en="Projects">Projekte</a>
-    <a class="nav__mobile-link" href="#process"  data-de="Vorgehen"   data-en="Process">Vorgehen</a>
-    <a class="nav__mobile-link" href="#contact"  data-de="Kontakt"    data-en="Contact">Kontakt</a>
-    <div class="nav__mobile-bottom">
-      <button class="nav__lang-toggle" id="langToggleMobile" aria-label="Sprache wechseln" type="button">
-        <span class="nav__lang-option is-active" data-lang="de">DE</span>
-        <span class="nav__lang-divider" aria-hidden="true">|</span>
-        <span class="nav__lang-option" data-lang="en">EN</span>
-      </button>
-      <a href="#contact" class="btn btn--primary btn--sm" data-de="Kontakt" data-en="Contact">Kontakt</a>
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu" id="navMobileMenu" aria-hidden="true" role="navigation"
+      aria-label="Mobile Navigation">
+      <a class="nav__mobile-link" href="#about" data-de="Über mich" data-en="About">Über mich</a>
+      <a class="nav__mobile-link" href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
+      <a class="nav__mobile-link" href="#projects" data-de="Projekte" data-en="Projects">Projekte</a>
+      <a class="nav__mobile-link" href="#process" data-de="Vorgehen" data-en="Process">Vorgehen</a>
+      <a class="nav__mobile-link" href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
+      <div class="nav__mobile-bottom">
+        <button class="nav__lang-toggle" id="langToggleMobile" aria-label="Sprache wechseln" type="button">
+          <span class="nav__lang-option is-active" data-lang="de">DE</span>
+          <span class="nav__lang-divider" aria-hidden="true">|</span>
+          <span class="nav__lang-option" data-lang="en">EN</span>
+        </button>
+        <a href="#contact" class="btn btn--primary btn--sm" data-de="Kontakt" data-en="Contact">Kontakt</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<main id="main">
+  <main id="main">
 
-<!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════════ -->
-<section class="hero" id="hero" aria-labelledby="hero-heading">
-  <!-- Animated background -->
-  <div class="hero__bg" aria-hidden="true">
-    <div class="hero__glow-top"></div>
-    <div class="hero__shape hero__shape--1"></div>
-    <div class="hero__shape hero__shape--2"></div>
-    <div class="hero__shape hero__shape--3"></div>
-    <div class="hero__grid"></div>
-  </div>
-
-  <div class="hero__container container">
-
-    <p class="hero__eyebrow animate-on-scroll"
-       data-de="Freelance App-Entwickler · Deutschland"
-       data-en="Freelance App Developer · Germany">
-      Freelance App-Entwickler · Deutschland
-    </p>
-
-    <h1 class="hero__headline animate-on-scroll" id="hero-heading" style="--stagger-delay:100ms">
-      <span data-de="Apps, die" data-en="Apps that">Apps, die</span>
-      <span class="hero__headline-accent" data-de="wirklich funktionieren." data-en="actually work.">wirklich funktionieren.</span>
-    </h1>
-
-    <p class="hero__subheadline animate-on-scroll" style="--stagger-delay:200ms"
-       data-de="Von der Idee bis zum Launch: iOS, Android und Full-Stack-Entwicklung — zuverlässig, schnell und persönlich."
-       data-en="From idea to launch: iOS, Android and full-stack development — reliable, fast, and personal.">
-      Von der Idee bis zum Launch: iOS, Android und Full-Stack-Entwicklung — zuverlässig, schnell und persönlich.
-    </p>
-
-    <div class="hero__cta-group animate-on-scroll" style="--stagger-delay:300ms">
-      <a href="#contact" class="btn btn--primary btn--lg"
-         data-de="Projekt starten" data-en="Start a Project">Projekt starten</a>
-      <a href="#projects" class="btn btn--ghost btn--lg"
-         data-de="Meine Apps ansehen" data-en="See My Apps">Meine Apps ansehen</a>
-    </div>
-
-    <div class="hero__trust animate-on-scroll" style="--stagger-delay:400ms" aria-label="Vertrauensindikatoren">
-      <div class="hero__trust-item">
-        <span class="hero__trust-number">2+</span>
-        <span class="hero__trust-label" data-de="Apps live im Store" data-en="Apps live in store">Apps live im Store</span>
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Animated background -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow-top"></div>
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+        <div class="hero__grid"></div>
       </div>
-      <div class="hero__trust-divider" aria-hidden="true"></div>
-      <div class="hero__trust-item">
-        <span class="hero__trust-number">iOS</span>
-        <span class="hero__trust-label" data-de="App Store" data-en="App Store">App Store</span>
-      </div>
-      <div class="hero__trust-divider" aria-hidden="true"></div>
-      <div class="hero__trust-item">
-        <span class="hero__trust-number">100%</span>
-        <span class="hero__trust-label" data-de="Eigenentwicklung" data-en="Self-developed">Eigenentwicklung</span>
-      </div>
-    </div>
 
-  </div>
-</section>
+      <div class="hero__container container">
 
-<!-- ═══════════════════════════════════════════════════════
+        <p class="hero__eyebrow animate-on-scroll" data-de="Freelance App-Entwickler · Deutschland"
+          data-en="Freelance App Developer · Germany">
+          Freelance App-Entwickler · Deutschland
+        </p>
+
+        <h1 class="hero__headline animate-on-scroll" id="hero-heading" style="--stagger-delay:100ms">
+          <span data-de="Apps, die" data-en="Apps that">Apps, die</span>
+          <span class="hero__headline-accent" data-de="wirklich funktionieren." data-en="actually work.">wirklich
+            funktionieren.</span>
+        </h1>
+
+        <p class="hero__subheadline animate-on-scroll" style="--stagger-delay:200ms"
+          data-de="Von der Idee bis zum Launch: iOS, Android und Full-Stack-Entwicklung — zuverlässig, schnell und persönlich."
+          data-en="From idea to launch: iOS, Android and full-stack development — reliable, fast, and personal.">
+          Von der Idee bis zum Launch: iOS, Android und Full-Stack-Entwicklung — zuverlässig, schnell und persönlich.
+        </p>
+
+        <div class="hero__cta-group animate-on-scroll" style="--stagger-delay:300ms">
+          <a href="#contact" class="btn btn--primary btn--lg" data-de="Projekt starten"
+            data-en="Start a Project">Projekt starten</a>
+          <a href="#projects" class="btn btn--ghost btn--lg" data-de="Meine Apps ansehen" data-en="See My Apps">Meine
+            Apps ansehen</a>
+        </div>
+
+        <div class="hero__trust animate-on-scroll" style="--stagger-delay:400ms" aria-label="Vertrauensindikatoren">
+          <div class="hero__trust-item">
+            <span class="hero__trust-number">2+</span>
+            <span class="hero__trust-label" data-de="Apps live im Store" data-en="Apps live in store">Apps live im
+              Store</span>
+          </div>
+          <div class="hero__trust-divider" aria-hidden="true"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-number">iOS</span>
+            <span class="hero__trust-label" data-de="App Store" data-en="App Store">App Store</span>
+          </div>
+          <div class="hero__trust-divider" aria-hidden="true"></div>
+          <div class="hero__trust-item">
+            <span class="hero__trust-number">100%</span>
+            <span class="hero__trust-label" data-de="Eigenentwicklung" data-en="Self-developed">Eigenentwicklung</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
      ABOUT
 ════════════════════════════════════════════════════════ -->
-<section class="about section" id="about" aria-labelledby="about-heading">
-  <div class="container">
-    <div class="about__grid">
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
 
-      <!-- Avatar -->
-      <div class="about__visual animate-on-scroll">
-        <div class="about__avatar-frame">
-          <div class="about__avatar-inner">
-            <img src="profile.jpg" alt="Robin Maly — Freelance App-Entwickler aus Deutschland" class="about__avatar-photo">
+          <!-- Avatar -->
+          <div class="about__visual animate-on-scroll">
+            <div class="about__avatar-frame">
+              <div class="about__avatar-inner">
+                <img src="profile.jpg" alt="Robin Maly — Freelance App-Entwickler aus Deutschland"
+                  class="about__avatar-photo">
+              </div>
+            </div>
+            <div class="about__badge">
+              <span class="about__badge-dot" aria-hidden="true"></span>
+              <span data-de="Verfügbar für neue Projekte" data-en="Available for new projects">Verfügbar für neue
+                Projekte</span>
+            </div>
           </div>
-        </div>
-        <div class="about__badge">
-          <span class="about__badge-dot" aria-hidden="true"></span>
-          <span data-de="Verfügbar für neue Projekte" data-en="Available for new projects">Verfügbar für neue Projekte</span>
+
+          <!-- Text content -->
+          <div class="about__content animate-on-scroll" style="--stagger-delay:150ms">
+            <p class="section-eyebrow" data-de="Über mich" data-en="About Me">Über mich</p>
+            <h2 class="section-heading" id="about-heading" data-de="Ich entwickle Apps, die dein Geschäft voranbringen."
+              data-en="I build apps that move your business forward.">
+              Ich entwickle Apps, die dein Geschäft voranbringen.
+            </h2>
+            <p class="about__body"
+              data-de="Hallo, ich bin Robin Maly — Freelance-App-Entwickler aus Deutschland. Ich entwickle maßgeschneiderte mobile Apps und digitale Produkte, die nicht nur schön aussehen, sondern echte Probleme lösen. Mit meinen Apps TimeTrackerProf und Finkenkrug habe ich bewiesen, dass ich von der Idee bis zum fertigen Produkt im App Store liefere."
+              data-en="Hi, I'm Robin Maly — freelance app developer based in Germany. I build tailor-made mobile apps and digital products that don't just look great, but solve real problems. With my apps TimeTrackerProf and Finkenkrug, I've proven that I can deliver from idea to finished product on the App Store.">
+              Hallo, ich bin Robin Maly — Freelance-App-Entwickler aus Deutschland. Ich entwickle maßgeschneiderte
+              mobile Apps und digitale Produkte, die nicht nur schön aussehen, sondern echte Probleme lösen. Mit meinen
+              Apps TimeTrackerProf und Finkenkrug habe ich bewiesen, dass ich von der Idee bis zum fertigen Produkt im
+              App Store liefere.
+            </p>
+
+            <div class="about__stats" role="list" aria-label="Fakten">
+              <div class="about__stat" role="listitem">
+                <span class="about__stat-number">2</span>
+                <span class="about__stat-label" data-de="Live-Apps" data-en="Live Apps">Live-Apps</span>
+              </div>
+              <div class="about__stat" role="listitem">
+                <span class="about__stat-number">iOS</span>
+                <span class="about__stat-label" data-de="& Android" data-en="& Android">& Android</span>
+              </div>
+              <div class="about__stat" role="listitem">
+                <span class="about__stat-number">DE</span>
+                <span class="about__stat-label" data-de="Freelancer" data-en="Freelancer">Freelancer</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <!-- Text content -->
-      <div class="about__content animate-on-scroll" style="--stagger-delay:150ms">
-        <p class="section-eyebrow" data-de="Über mich" data-en="About Me">Über mich</p>
-        <h2 class="section-heading" id="about-heading"
-            data-de="Ich entwickle Apps, die dein Geschäft voranbringen."
-            data-en="I build apps that move your business forward.">
-          Ich entwickle Apps, die dein Geschäft voranbringen.
-        </h2>
-        <p class="about__body"
-           data-de="Hallo, ich bin Robin Maly — Freelance-App-Entwickler aus Deutschland. Ich entwickle maßgeschneiderte mobile Apps und digitale Produkte, die nicht nur schön aussehen, sondern echte Probleme lösen. Mit meinen Apps TimeTrackerProf und Finkenkrug habe ich bewiesen, dass ich von der Idee bis zum fertigen Produkt im App Store liefere."
-           data-en="Hi, I'm Robin Maly — freelance app developer based in Germany. I build tailor-made mobile apps and digital products that don't just look great, but solve real problems. With my apps TimeTrackerProf and Finkenkrug, I've proven that I can deliver from idea to finished product on the App Store.">
-          Hallo, ich bin Robin Maly — Freelance-App-Entwickler aus Deutschland. Ich entwickle maßgeschneiderte mobile Apps und digitale Produkte, die nicht nur schön aussehen, sondern echte Probleme lösen. Mit meinen Apps TimeTrackerProf und Finkenkrug habe ich bewiesen, dass ich von der Idee bis zum fertigen Produkt im App Store liefere.
-        </p>
-
-        <div class="about__stats" role="list" aria-label="Fakten">
-          <div class="about__stat" role="listitem">
-            <span class="about__stat-number">2</span>
-            <span class="about__stat-label" data-de="Live-Apps" data-en="Live Apps">Live-Apps</span>
-          </div>
-          <div class="about__stat" role="listitem">
-            <span class="about__stat-number">iOS</span>
-            <span class="about__stat-label" data-de="& Android" data-en="& Android">& Android</span>
-          </div>
-          <div class="about__stat" role="listitem">
-            <span class="about__stat-number">DE</span>
-            <span class="about__stat-label" data-de="Freelancer" data-en="Freelancer">Freelancer</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
      SERVICES
 ════════════════════════════════════════════════════════ -->
-<section class="services section" id="services" aria-labelledby="services-heading">
-  <div class="container">
+    <section class="services section" id="services" aria-labelledby="services-heading">
+      <div class="container">
 
-    <header class="section-header animate-on-scroll">
-      <p class="section-eyebrow" data-de="Leistungen" data-en="Services">Leistungen</p>
-      <h2 class="section-heading" id="services-heading"
-          data-de="Was ich für dich entwickle."
-          data-en="What I build for you.">
-        Was ich für dich entwickle.
-      </h2>
-      <p class="section-subheading"
-         data-de="Von der ersten Idee bis zur Veröffentlichung — alles aus einer Hand, zuverlässig und transparent."
-         data-en="From first idea to launch — everything from one source, reliable and transparent.">
-        Von der ersten Idee bis zur Veröffentlichung — alles aus einer Hand, zuverlässig und transparent.
-      </p>
-    </header>
+        <header class="section-header animate-on-scroll">
+          <p class="section-eyebrow" data-de="Leistungen" data-en="Services">Leistungen</p>
+          <h2 class="section-heading" id="services-heading" data-de="Was ich für dich entwickle."
+            data-en="What I build for you.">
+            Was ich für dich entwickle.
+          </h2>
+          <p class="section-subheading"
+            data-de="Von der ersten Idee bis zur Veröffentlichung — alles aus einer Hand, zuverlässig und transparent."
+            data-en="From first idea to launch — everything from one source, reliable and transparent.">
+            Von der ersten Idee bis zur Veröffentlichung — alles aus einer Hand, zuverlässig und transparent.
+          </p>
+        </header>
 
-    <div class="services__grid">
+        <div class="services__grid">
 
-      <!-- Card 1: MVP App Development -->
-      <article class="card animate-on-scroll" style="--stagger-delay:0ms" aria-labelledby="service-1-title">
-        <div class="card__icon-wrap" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-          </svg>
+          <!-- Card 1: MVP App Development -->
+          <article class="card animate-on-scroll" style="--stagger-delay:0ms" aria-labelledby="service-1-title">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              </svg>
+            </div>
+            <h3 class="card__title" id="service-1-title" data-de="MVP App-Entwicklung" data-en="MVP App Development">MVP
+              App-Entwicklung</h3>
+            <p class="card__body"
+              data-de="Ich entwickle deinen App-Prototyp für iOS und Android — schnell, fokussiert und marktreif. Perfekt, um deine Idee zu validieren und erste Nutzer zu gewinnen."
+              data-en="I build your app prototype for iOS and Android — fast, focused, and market-ready. Perfect for validating your idea and acquiring first users.">
+              Ich entwickle deinen App-Prototyp für iOS und Android — schnell, fokussiert und marktreif. Perfekt, um
+              deine Idee zu validieren und erste Nutzer zu gewinnen.
+            </p>
+            <ul class="card__list" aria-label="Leistungsumfang">
+              <li data-de="Native iOS & Android" data-en="Native iOS & Android">Native iOS & Android</li>
+              <li data-de="Schnelle Time-to-Market" data-en="Fast time-to-market">Schnelle Time-to-Market</li>
+              <li data-de="Iterative Entwicklung" data-en="Iterative development">Iterative Entwicklung</li>
+              <li data-de="App Store Publishing" data-en="App Store publishing">App Store Publishing</li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Full-Stack Development -->
+          <article class="card animate-on-scroll" style="--stagger-delay:100ms" aria-labelledby="service-2-title">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                <line x1="6" x2="6" y1="6" y2="6" />
+                <line x1="6" x2="6" y1="18" y2="18" />
+              </svg>
+            </div>
+            <h3 class="card__title" id="service-2-title" data-de="Full-Stack-Entwicklung"
+              data-en="Full-Stack Development">Full-Stack-Entwicklung</h3>
+            <p class="card__body"
+              data-de="Backend-APIs, Datenbanken, Auth-Systeme und ein modernes Frontend — alles von mir entwickelt, getestet und deployed. Eine Ansprechperson für dein gesamtes digitales Produkt."
+              data-en="Backend APIs, databases, auth systems, and a modern frontend — all developed, tested, and deployed by me. One contact for your entire digital product.">
+              Backend-APIs, Datenbanken, Auth-Systeme und ein modernes Frontend — alles von mir entwickelt, getestet und
+              deployed. Eine Ansprechperson für dein gesamtes digitales Produkt.
+            </p>
+            <ul class="card__list" aria-label="Leistungsumfang">
+              <li data-de="REST- & GraphQL-APIs" data-en="REST & GraphQL APIs">REST- & GraphQL-APIs</li>
+              <li data-de="Cloud-Infrastruktur" data-en="Cloud infrastructure">Cloud-Infrastruktur</li>
+              <li data-de="Authentifizierung & Sicherheit" data-en="Authentication & security">Authentifizierung &
+                Sicherheit</li>
+              <li data-de="Moderne Frontend-Architektur" data-en="Modern frontend architecture">Moderne
+                Frontend-Architektur</li>
+            </ul>
+          </article>
+
+          <!-- Card 3: Monthly Maintenance -->
+          <article class="card animate-on-scroll" style="--stagger-delay:200ms" aria-labelledby="service-3-title">
+            <div class="card__icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <h3 class="card__title" id="service-3-title" data-de="Monatliche Wartung" data-en="Monthly Maintenance">
+              Monatliche Wartung</h3>
+            <p class="card__body"
+              data-de="Ich halte deine App aktuell, sicher und fehlerfrei — als verlässlicher Partner im Hintergrund. Du fokussierst dich aufs Business, ich kümmere mich um die Technik."
+              data-en="I keep your app up to date, secure, and error-free — as a reliable partner in the background. You focus on your business, I take care of the technology.">
+              Ich halte deine App aktuell, sicher und fehlerfrei — als verlässlicher Partner im Hintergrund. Du
+              fokussierst dich aufs Business, ich kümmere mich um die Technik.
+            </p>
+            <ul class="card__list" aria-label="Leistungsumfang">
+              <li data-de="OS & Dependency Updates" data-en="OS & dependency updates">OS & Dependency Updates</li>
+              <li data-de="Bug-Fixes & Performance" data-en="Bug fixes & performance">Bug-Fixes & Performance</li>
+              <li data-de="Monatliches Reporting" data-en="Monthly reporting">Monatliches Reporting</li>
+              <li data-de="Priorisierter Support" data-en="Priority support">Priorisierter Support</li>
+            </ul>
+          </article>
+
         </div>
-        <h3 class="card__title" id="service-1-title"
-            data-de="MVP App-Entwicklung" data-en="MVP App Development">MVP App-Entwicklung</h3>
-        <p class="card__body"
-           data-de="Ich entwickle deinen App-Prototyp für iOS und Android — schnell, fokussiert und marktreif. Perfekt, um deine Idee zu validieren und erste Nutzer zu gewinnen."
-           data-en="I build your app prototype for iOS and Android — fast, focused, and market-ready. Perfect for validating your idea and acquiring first users.">
-          Ich entwickle deinen App-Prototyp für iOS und Android — schnell, fokussiert und marktreif. Perfekt, um deine Idee zu validieren und erste Nutzer zu gewinnen.
-        </p>
-        <ul class="card__list" aria-label="Leistungsumfang">
-          <li data-de="Native iOS & Android" data-en="Native iOS & Android">Native iOS & Android</li>
-          <li data-de="Schnelle Time-to-Market" data-en="Fast time-to-market">Schnelle Time-to-Market</li>
-          <li data-de="Iterative Entwicklung" data-en="Iterative development">Iterative Entwicklung</li>
-          <li data-de="App Store Publishing" data-en="App Store publishing">App Store Publishing</li>
-        </ul>
-      </article>
+      </div>
+    </section>
 
-      <!-- Card 2: Full-Stack Development -->
-      <article class="card animate-on-scroll" style="--stagger-delay:100ms" aria-labelledby="service-2-title">
-        <div class="card__icon-wrap" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect width="20" height="8" x="2" y="2" rx="2" ry="2"/>
-            <rect width="20" height="8" x="2" y="14" rx="2" ry="2"/>
-            <line x1="6" x2="6" y1="6" y2="6"/>
-            <line x1="6" x2="6" y1="18" y2="18"/>
-          </svg>
-        </div>
-        <h3 class="card__title" id="service-2-title"
-            data-de="Full-Stack-Entwicklung" data-en="Full-Stack Development">Full-Stack-Entwicklung</h3>
-        <p class="card__body"
-           data-de="Backend-APIs, Datenbanken, Auth-Systeme und ein modernes Frontend — alles von mir entwickelt, getestet und deployed. Eine Ansprechperson für dein gesamtes digitales Produkt."
-           data-en="Backend APIs, databases, auth systems, and a modern frontend — all developed, tested, and deployed by me. One contact for your entire digital product.">
-          Backend-APIs, Datenbanken, Auth-Systeme und ein modernes Frontend — alles von mir entwickelt, getestet und deployed. Eine Ansprechperson für dein gesamtes digitales Produkt.
-        </p>
-        <ul class="card__list" aria-label="Leistungsumfang">
-          <li data-de="REST- & GraphQL-APIs" data-en="REST & GraphQL APIs">REST- & GraphQL-APIs</li>
-          <li data-de="Cloud-Infrastruktur" data-en="Cloud infrastructure">Cloud-Infrastruktur</li>
-          <li data-de="Authentifizierung & Sicherheit" data-en="Authentication & security">Authentifizierung & Sicherheit</li>
-          <li data-de="Moderne Frontend-Architektur" data-en="Modern frontend architecture">Moderne Frontend-Architektur</li>
-        </ul>
-      </article>
-
-      <!-- Card 3: Monthly Maintenance -->
-      <article class="card animate-on-scroll" style="--stagger-delay:200ms" aria-labelledby="service-3-title">
-        <div class="card__icon-wrap" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="m9 12 2 2 4-4"/>
-          </svg>
-        </div>
-        <h3 class="card__title" id="service-3-title"
-            data-de="Monatliche Wartung" data-en="Monthly Maintenance">Monatliche Wartung</h3>
-        <p class="card__body"
-           data-de="Ich halte deine App aktuell, sicher und fehlerfrei — als verlässlicher Partner im Hintergrund. Du fokussierst dich aufs Business, ich kümmere mich um die Technik."
-           data-en="I keep your app up to date, secure, and error-free — as a reliable partner in the background. You focus on your business, I take care of the technology.">
-          Ich halte deine App aktuell, sicher und fehlerfrei — als verlässlicher Partner im Hintergrund. Du fokussierst dich aufs Business, ich kümmere mich um die Technik.
-        </p>
-        <ul class="card__list" aria-label="Leistungsumfang">
-          <li data-de="OS & Dependency Updates" data-en="OS & dependency updates">OS & Dependency Updates</li>
-          <li data-de="Bug-Fixes & Performance" data-en="Bug fixes & performance">Bug-Fixes & Performance</li>
-          <li data-de="Monatliches Reporting" data-en="Monthly reporting">Monatliches Reporting</li>
-          <li data-de="Priorisierter Support" data-en="Priority support">Priorisierter Support</li>
-        </ul>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
      PROJECTS
 ════════════════════════════════════════════════════════ -->
-<section class="projects section" id="projects" aria-labelledby="projects-heading">
-  <div class="container">
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
 
-    <header class="section-header animate-on-scroll">
-      <p class="section-eyebrow" data-de="Projekte" data-en="Projects">Projekte</p>
-      <h2 class="section-heading" id="projects-heading"
-          data-de="Live im App Store." data-en="Live on the App Store.">
-        Live im App Store.
-      </h2>
-      <p class="section-subheading"
-         data-de="Eigene Apps, die ich von Grund auf entwickelt und im Apple App Store veröffentlicht habe."
-         data-en="My own apps, built from scratch and published on the Apple App Store.">
-        Eigene Apps, die ich von Grund auf entwickelt und im Apple App Store veröffentlicht habe.
-      </p>
-    </header>
+        <header class="section-header animate-on-scroll">
+          <p class="section-eyebrow" data-de="Projekte" data-en="Projects">Projekte</p>
+          <h2 class="section-heading" id="projects-heading" data-de="Live im App Store."
+            data-en="Live on the App Store.">
+            Live im App Store.
+          </h2>
+          <p class="section-subheading"
+            data-de="Eigene Apps, die ich von Grund auf entwickelt und im Apple App Store veröffentlicht habe."
+            data-en="My own apps, built from scratch and published on the Apple App Store.">
+            Eigene Apps, die ich von Grund auf entwickelt und im Apple App Store veröffentlicht habe.
+          </p>
+        </header>
 
-    <div class="projects__grid">
+        <div class="projects__grid">
 
-      <!-- Project 1: TimeTrackerProf -->
-      <article class="card card--project animate-on-scroll" style="--stagger-delay:0ms" aria-labelledby="project-1-title">
-        <div class="card__mockup">
-          <div class="iphone" aria-hidden="true">
-            <span class="iphone__btn iphone__btn--silent"></span>
-            <span class="iphone__btn iphone__btn--vol-up"></span>
-            <span class="iphone__btn iphone__btn--vol-down"></span>
-            <span class="iphone__btn iphone__btn--power"></span>
-            <div class="iphone__screen">
-              <div class="iphone__notch"></div>
-              <img src="screenshot-timetrackerprof.png"
-                   alt="TimeTrackerProf App Screenshot"
-                   class="iphone__screenshot"
-                   loading="lazy">
-              <div class="iphone__home-bar"></div>
+          <!-- Project 1: TimeTrackerProf -->
+          <article class="card card--project animate-on-scroll" style="--stagger-delay:0ms"
+            aria-labelledby="project-1-title">
+            <div class="card__mockup">
+              <div class="iphone" aria-hidden="true">
+                <span class="iphone__btn iphone__btn--silent"></span>
+                <span class="iphone__btn iphone__btn--vol-up"></span>
+                <span class="iphone__btn iphone__btn--vol-down"></span>
+                <span class="iphone__btn iphone__btn--power"></span>
+                <div class="iphone__screen">
+                  <div class="iphone__notch"></div>
+                  <img src="screenshot-timetrackerprof.png" alt="TimeTrackerProf App Screenshot"
+                    class="iphone__screenshot" loading="lazy">
+                  <div class="iphone__home-bar"></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card__content">
-          <div class="card__app-meta">
-            <img src="icon-timetrackerprof.png" alt="TimeTrackerProf App Icon" class="card__app-icon-img">
-            <div>
-              <h3 class="card__app-name" id="project-1-title">TimeTrackerProf</h3>
-              <span class="card__category"
-                    data-de="Produktivität · iOS & Android"
+            <div class="card__content">
+              <div class="card__app-meta">
+                <img src="icon-timetrackerprof.png" alt="TimeTrackerProf App Icon" class="card__app-icon-img">
+                <div>
+                  <h3 class="card__app-name" id="project-1-title">TimeTrackerProf</h3>
+                  <span class="card__category" data-de="Produktivität · iOS & Android"
                     data-en="Productivity · iOS & Android">Produktivität · iOS & Android</span>
+                </div>
+              </div>
+              <p class="card__body"
+                data-de="Schluss mit Papierkram — professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten erfassen, Projekte verwalten und Berichte exportieren."
+                data-en="No more paperwork — professional time tracking for freelancers and the self-employed. Log hours, manage projects, and export reports.">
+                Schluss mit Papierkram — professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten
+                erfassen, Projekte verwalten und Berichte exportieren.
+              </p>
+              <div class="card__tags" aria-label="Technologien">
+                <span class="tag">Swift</span>
+                <span class="tag">SwiftUI</span>
+                <span class="tag">CloudKit</span>
+              </div>
+              <!-- Store Badges -->
+              <div class="card__store-badges">
+                <a class="card__store-link" href="https://apps.apple.com/de/app/timetrackerprof/id6754637185"
+                  target="_blank" rel="noopener noreferrer" aria-label="TimeTrackerProf im App Store herunterladen">
+                  <svg class="store-badge" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Download in the App Store">
+                    <title>Download in the App Store</title>
+                    <rect width="160" height="48" rx="8" fill="#000" />
+                    <path
+                      d="M22.5 16.2c1.8-2.2 1.5-4.6 1.5-4.6s-2.2.1-4 2.3c-1.6 2-1.5 4.3-1.5 4.3s2.3.1 4-2zm-1.3 2.7c-2.3 0-3.3 1.4-4.9 1.4-1.7 0-3.1-1.3-4.7-1.3-2.2 0-4.9 2-4.9 5.8 0 4.6 3.8 10 5.8 10 1.4 0 2.1-1.1 3.8-1.1s2.2 1.1 3.8 1.1c2.2 0 5.8-5.1 5.8-9.6 0-3.7-2.5-5.1-4.7-5.3z"
+                      fill="#fff" />
+                    <text x="34" y="23"
+                      font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+                      font-size="9.5" fill="rgba(255,255,255,0.82)" letter-spacing="0.3">Download in the</text>
+                    <text x="33" y="38"
+                      font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+                      font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store</text>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <p class="card__body"
-             data-de="Schluss mit Papierkram — professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten erfassen, Projekte verwalten und Berichte exportieren."
-             data-en="No more paperwork — professional time tracking for freelancers and the self-employed. Log hours, manage projects, and export reports.">
-            Schluss mit Papierkram — professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten erfassen, Projekte verwalten und Berichte exportieren.
-          </p>
-          <div class="card__tags" aria-label="Technologien">
-            <span class="tag">Swift</span>
-            <span class="tag">SwiftUI</span>
-            <span class="tag">CloudKit</span>
-          </div>
-          <!-- Store Badges -->
-          <div class="card__store-badges">
-            <a class="card__store-link"
-               href="https://apps.apple.com/de/app/timetrackerprof/id6754637185"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="TimeTrackerProf im App Store herunterladen">
-              <svg class="store-badge" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Download in the App Store">
-                <title>Download in the App Store</title>
-                <rect width="160" height="48" rx="8" fill="#000"/>
-                <path d="M22.5 16.2c1.8-2.2 1.5-4.6 1.5-4.6s-2.2.1-4 2.3c-1.6 2-1.5 4.3-1.5 4.3s2.3.1 4-2zm-1.3 2.7c-2.3 0-3.3 1.4-4.9 1.4-1.7 0-3.1-1.3-4.7-1.3-2.2 0-4.9 2-4.9 5.8 0 4.6 3.8 10 5.8 10 1.4 0 2.1-1.1 3.8-1.1s2.2 1.1 3.8 1.1c2.2 0 5.8-5.1 5.8-9.6 0-3.7-2.5-5.1-4.7-5.3z" fill="#fff"/>
-                <text x="34" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)" letter-spacing="0.3">Download in the</text>
-                <text x="33" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store</text>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </article>
+          </article>
 
-      <!-- Project 2: Finkenkrug -->
-      <article class="card card--project animate-on-scroll" style="--stagger-delay:150ms" aria-labelledby="project-2-title">
-        <div class="card__mockup">
-          <div class="iphone" aria-hidden="true">
-            <span class="iphone__btn iphone__btn--silent"></span>
-            <span class="iphone__btn iphone__btn--vol-up"></span>
-            <span class="iphone__btn iphone__btn--vol-down"></span>
-            <span class="iphone__btn iphone__btn--power"></span>
-            <div class="iphone__screen">
-              <div class="iphone__notch"></div>
-              <img src="screenshot-finkenkrug.png"
-                   alt="Finkenkrug App Screenshot"
-                   class="iphone__screenshot"
-                   loading="lazy">
-              <div class="iphone__home-bar"></div>
+          <!-- Project 2: Finkenkrug -->
+          <article class="card card--project animate-on-scroll" style="--stagger-delay:150ms"
+            aria-labelledby="project-2-title">
+            <div class="card__mockup">
+              <div class="iphone" aria-hidden="true">
+                <span class="iphone__btn iphone__btn--silent"></span>
+                <span class="iphone__btn iphone__btn--vol-up"></span>
+                <span class="iphone__btn iphone__btn--vol-down"></span>
+                <span class="iphone__btn iphone__btn--power"></span>
+                <div class="iphone__screen">
+                  <div class="iphone__notch"></div>
+                  <img src="screenshot-finkenkrug.png" alt="Finkenkrug App Screenshot" class="iphone__screenshot"
+                    loading="lazy">
+                  <div class="iphone__home-bar"></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="card__content">
-          <div class="card__app-meta">
-            <img src="icon-finkenkrug.png" alt="Finkenkrug App Icon" class="card__app-icon-img">
-            <div>
-              <h3 class="card__app-name" id="project-2-title">Finkenkrug</h3>
-              <span class="card__category"
-                    data-de="Gastronomie · iOS"
-                    data-en="Hospitality · iOS">Gastronomie · iOS</span>
+            <div class="card__content">
+              <div class="card__app-meta">
+                <img src="icon-finkenkrug.png" alt="Finkenkrug App Icon" class="card__app-icon-img">
+                <div>
+                  <h3 class="card__app-name" id="project-2-title">Finkenkrug</h3>
+                  <span class="card__category" data-de="Gastronomie · iOS" data-en="Hospitality · iOS">Gastronomie ·
+                    iOS</span>
+                </div>
+              </div>
+              <p class="card__body"
+                data-de="Die offizielle App der legendären Studentenkneipe Finkenkrug in Duisburg — Veranstaltungen, Speise- & Getränkekarten, Jobs und Merch, alles in einer App."
+                data-en="The official app for the legendary Finkenkrug student bar in Duisburg — events, food & drink menus, jobs and merch, all in one app.">
+                Die offizielle App der legendären Studentenkneipe Finkenkrug in Duisburg — Veranstaltungen, Speise- &
+                Getränkekarten, Jobs und Merch, alles in einer App.
+              </p>
+              <div class="card__tags" aria-label="Technologien">
+                <span class="tag">Swift</span>
+                <span class="tag">SwiftUI</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Gastronomie</span>
+              </div>
+              <!-- Store Badges -->
+              <div class="card__store-badges">
+                <a class="card__store-link" href="https://apps.apple.com/de/app/finkenkrug/id6760216926" target="_blank"
+                  rel="noopener noreferrer" aria-label="Finkenkrug im App Store herunterladen">
+                  <svg class="store-badge" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Download in the App Store">
+                    <title>Download in the App Store</title>
+                    <rect width="160" height="48" rx="8" fill="#000" />
+                    <path
+                      d="M22.5 16.2c1.8-2.2 1.5-4.6 1.5-4.6s-2.2.1-4 2.3c-1.6 2-1.5 4.3-1.5 4.3s2.3.1 4-2zm-1.3 2.7c-2.3 0-3.3 1.4-4.9 1.4-1.7 0-3.1-1.3-4.7-1.3-2.2 0-4.9 2-4.9 5.8 0 4.6 3.8 10 5.8 10 1.4 0 2.1-1.1 3.8-1.1s2.2 1.1 3.8 1.1c2.2 0 5.8-5.1 5.8-9.6 0-3.7-2.5-5.1-4.7-5.3z"
+                      fill="#fff" />
+                    <text x="34" y="23"
+                      font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+                      font-size="9.5" fill="rgba(255,255,255,0.82)" letter-spacing="0.3">Download in the</text>
+                    <text x="33" y="38"
+                      font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+                      font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store</text>
+                  </svg>
+                </a>
+              </div>
             </div>
-          </div>
-          <p class="card__body"
-             data-de="Die offizielle App der legendären Studentenkneipe Finkenkrug in Duisburg — Veranstaltungen, Speise- & Getränkekarten, Jobs und Merch, alles in einer App."
-             data-en="The official app for the legendary Finkenkrug student bar in Duisburg — events, food & drink menus, jobs and merch, all in one app.">
-            Die offizielle App der legendären Studentenkneipe Finkenkrug in Duisburg — Veranstaltungen, Speise- & Getränkekarten, Jobs und Merch, alles in einer App.
-          </p>
-          <div class="card__tags" aria-label="Technologien">
-            <span class="tag">Swift</span>
-            <span class="tag">SwiftUI</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">Gastronomie</span>
-          </div>
-          <!-- Store Badges -->
-          <div class="card__store-badges">
-          <a class="card__store-link"
-             href="https://apps.apple.com/de/app/finkenkrug/id6760216926"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="Finkenkrug im App Store herunterladen">
-            <svg class="store-badge" viewBox="0 0 160 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Download in the App Store">
-              <title>Download in the App Store</title>
-              <rect width="160" height="48" rx="8" fill="#000"/>
-              <path d="M22.5 16.2c1.8-2.2 1.5-4.6 1.5-4.6s-2.2.1-4 2.3c-1.6 2-1.5 4.3-1.5 4.3s2.3.1 4-2zm-1.3 2.7c-2.3 0-3.3 1.4-4.9 1.4-1.7 0-3.1-1.3-4.7-1.3-2.2 0-4.9 2-4.9 5.8 0 4.6 3.8 10 5.8 10 1.4 0 2.1-1.1 3.8-1.1s2.2 1.1 3.8 1.1c2.2 0 5.8-5.1 5.8-9.6 0-3.7-2.5-5.1-4.7-5.3z" fill="#fff"/>
-              <text x="34" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9.5" fill="rgba(255,255,255,0.82)" letter-spacing="0.3">Download in the</text>
-              <text x="33" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="600" fill="#fff" letter-spacing="-0.3">App Store</text>
-            </svg>
-          </a>
-          </div>
+          </article>
+
         </div>
-      </article>
+      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════
      PROCESS
 ════════════════════════════════════════════════════════ -->
-<section class="process section" id="process" aria-labelledby="process-heading">
-  <div class="container">
+    <section class="process section" id="process" aria-labelledby="process-heading">
+      <div class="container">
 
-    <header class="section-header animate-on-scroll">
-      <p class="section-eyebrow" data-de="Vorgehen" data-en="Process">Vorgehen</p>
-      <h2 class="section-heading" id="process-heading"
-          data-de="So arbeiten wir zusammen." data-en="How we work together.">
-        So arbeiten wir zusammen.
-      </h2>
-      <p class="section-subheading"
-         data-de="Transparent, strukturiert und immer auf Augenhöhe — so läuft ein Projekt mit mir ab."
-         data-en="Transparent, structured, and always at eye level — this is how a project with me works.">
-        Transparent, strukturiert und immer auf Augenhöhe — so läuft ein Projekt mit mir ab.
-      </p>
-    </header>
-
-    <ol class="process__steps animate-on-scroll" style="--stagger-delay:100ms">
-
-      <li class="process__step">
-        <div class="process__number-wrap" aria-hidden="true">01</div>
-        <div class="process__step-content">
-          <h3 class="process__step-title"
-              data-de="Gespräch & Analyse" data-en="Discovery Call">
-            Gespräch & Analyse
-          </h3>
-          <p class="process__step-body"
-             data-de="Wir besprechen deine Idee, Ziele und technischen Anforderungen in einem kostenlosen Erstgespräch. Kein Fachjargon, nur ehrliche Einschätzung."
-             data-en="We discuss your idea, goals, and technical requirements in a free initial call. No jargon, just honest assessment.">
-            Wir besprechen deine Idee, Ziele und technischen Anforderungen in einem kostenlosen Erstgespräch. Kein Fachjargon, nur ehrliche Einschätzung.
+        <header class="section-header animate-on-scroll">
+          <p class="section-eyebrow" data-de="Vorgehen" data-en="Process">Vorgehen</p>
+          <h2 class="section-heading" id="process-heading" data-de="So arbeiten wir zusammen."
+            data-en="How we work together.">
+            So arbeiten wir zusammen.
+          </h2>
+          <p class="section-subheading"
+            data-de="Transparent, strukturiert und immer auf Augenhöhe — so läuft ein Projekt mit mir ab."
+            data-en="Transparent, structured, and always at eye level — this is how a project with me works.">
+            Transparent, strukturiert und immer auf Augenhöhe — so läuft ein Projekt mit mir ab.
           </p>
-        </div>
-      </li>
+        </header>
 
-      <li class="process__step">
-        <div class="process__number-wrap" aria-hidden="true">02</div>
-        <div class="process__step-content">
-          <h3 class="process__step-title"
-              data-de="Konzept & Angebot" data-en="Concept & Quote">
-            Konzept & Angebot
-          </h3>
-          <p class="process__step-body"
-             data-de="Du erhältst ein klares Konzept mit Umfang, Zeitplan und Festpreis — keine versteckten Kosten, keine Überraschungen."
-             data-en="You receive a clear concept with scope, timeline, and fixed price — no hidden costs, no surprises.">
-            Du erhältst ein klares Konzept mit Umfang, Zeitplan und Festpreis — keine versteckten Kosten, keine Überraschungen.
-          </p>
-        </div>
-      </li>
+        <ol class="process__steps animate-on-scroll" style="--stagger-delay:100ms">
 
-      <li class="process__step">
-        <div class="process__number-wrap" aria-hidden="true">03</div>
-        <div class="process__step-content">
-          <h3 class="process__step-title"
-              data-de="Entwicklung & Feedback" data-en="Development & Feedback">
-            Entwicklung & Feedback
-          </h3>
-          <p class="process__step-body"
-             data-de="Ich entwickle iterativ und zeige dir regelmäßig Zwischenstände. Dein Feedback fließt direkt ein — so entsteht genau das, was du dir vorstellst."
-             data-en="I develop iteratively and show you regular progress updates. Your feedback flows in directly — resulting in exactly what you envisioned.">
-            Ich entwickle iterativ und zeige dir regelmäßig Zwischenstände. Dein Feedback fließt direkt ein — so entsteht genau das, was du dir vorstellst.
-          </p>
-        </div>
-      </li>
+          <li class="process__step">
+            <div class="process__number-wrap" aria-hidden="true">01</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title" data-de="Gespräch & Analyse" data-en="Discovery Call">
+                Gespräch & Analyse
+              </h3>
+              <p class="process__step-body"
+                data-de="Wir besprechen deine Idee, Ziele und technischen Anforderungen in einem kostenlosen Erstgespräch. Kein Fachjargon, nur ehrliche Einschätzung."
+                data-en="We discuss your idea, goals, and technical requirements in a free initial call. No jargon, just honest assessment.">
+                Wir besprechen deine Idee, Ziele und technischen Anforderungen in einem kostenlosen Erstgespräch. Kein
+                Fachjargon, nur ehrliche Einschätzung.
+              </p>
+            </div>
+          </li>
 
-      <li class="process__step">
-        <div class="process__number-wrap" aria-hidden="true">04</div>
-        <div class="process__step-content">
-          <h3 class="process__step-title"
-              data-de="Launch & Support" data-en="Launch & Support">
-            Launch & Support
-          </h3>
-          <p class="process__step-body"
-             data-de="Ich begleite dich beim App Store Publishing und stehe auch nach dem Launch für Fragen und Anpassungen zur Verfügung."
-             data-en="I support you through App Store publishing and remain available for questions and adjustments after launch.">
-            Ich begleite dich beim App Store Publishing und stehe auch nach dem Launch für Fragen und Anpassungen zur Verfügung.
-          </p>
-        </div>
-      </li>
+          <li class="process__step">
+            <div class="process__number-wrap" aria-hidden="true">02</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title" data-de="Konzept & Angebot" data-en="Concept & Quote">
+                Konzept & Angebot
+              </h3>
+              <p class="process__step-body"
+                data-de="Du erhältst ein klares Konzept mit Umfang, Zeitplan und Festpreis — keine versteckten Kosten, keine Überraschungen."
+                data-en="You receive a clear concept with scope, timeline, and fixed price — no hidden costs, no surprises.">
+                Du erhältst ein klares Konzept mit Umfang, Zeitplan und Festpreis — keine versteckten Kosten, keine
+                Überraschungen.
+              </p>
+            </div>
+          </li>
 
-    </ol>
-  </div>
-</section>
+          <li class="process__step">
+            <div class="process__number-wrap" aria-hidden="true">03</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title" data-de="Entwicklung & Feedback" data-en="Development & Feedback">
+                Entwicklung & Feedback
+              </h3>
+              <p class="process__step-body"
+                data-de="Ich entwickle iterativ und zeige dir regelmäßig Zwischenstände. Dein Feedback fließt direkt ein — so entsteht genau das, was du dir vorstellst."
+                data-en="I develop iteratively and show you regular progress updates. Your feedback flows in directly — resulting in exactly what you envisioned.">
+                Ich entwickle iterativ und zeige dir regelmäßig Zwischenstände. Dein Feedback fließt direkt ein — so
+                entsteht genau das, was du dir vorstellst.
+              </p>
+            </div>
+          </li>
 
-<!-- ═══════════════════════════════════════════════════════
+          <li class="process__step">
+            <div class="process__number-wrap" aria-hidden="true">04</div>
+            <div class="process__step-content">
+              <h3 class="process__step-title" data-de="Launch & Support" data-en="Launch & Support">
+                Launch & Support
+              </h3>
+              <p class="process__step-body"
+                data-de="Ich begleite dich beim App Store Publishing und stehe auch nach dem Launch für Fragen und Anpassungen zur Verfügung."
+                data-en="I support you through App Store publishing and remain available for questions and adjustments after launch.">
+                Ich begleite dich beim App Store Publishing und stehe auch nach dem Launch für Fragen und Anpassungen
+                zur Verfügung.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════
      CONTACT
 ════════════════════════════════════════════════════════ -->
-<section class="contact section" id="contact" aria-labelledby="contact-heading">
-  <div class="container">
-    <div class="contact__grid">
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__grid">
 
-      <!-- Info -->
-      <div class="contact__info animate-on-scroll">
-        <p class="section-eyebrow" data-de="Kontakt" data-en="Contact">Kontakt</p>
-        <h2 class="section-heading" id="contact-heading"
-            data-de="Lass uns dein Projekt besprechen."
-            data-en="Let's talk about your project.">
-          Lass uns dein Projekt besprechen.
-        </h2>
-        <p class="contact__body"
-           data-de="Füll das Formular aus oder schreib mir direkt — ich melde mich innerhalb von 24 Stunden bei dir."
-           data-en="Fill out the form or write me directly — I'll get back to you within 24 hours.">
-          Füll das Formular aus oder schreib mir direkt — ich melde mich innerhalb von 24 Stunden bei dir.
-        </p>
-        <div class="contact__channels">
-          <a class="contact__channel" href="mailto:robin@maly-development.de" aria-label="E-Mail an Robin Maly">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect width="20" height="16" x="2" y="4" rx="2"/>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-            </svg>
-            <span>robin@maly-development.de</span>
-          </a>
+          <!-- Info -->
+          <div class="contact__info animate-on-scroll">
+            <p class="section-eyebrow" data-de="Kontakt" data-en="Contact">Kontakt</p>
+            <h2 class="section-heading" id="contact-heading" data-de="Lass uns dein Projekt besprechen."
+              data-en="Let's talk about your project.">
+              Lass uns dein Projekt besprechen.
+            </h2>
+            <p class="contact__body"
+              data-de="Füll das Formular aus oder schreib mir direkt — ich melde mich innerhalb von 24 Stunden bei dir."
+              data-en="Fill out the form or write me directly — I'll get back to you within 24 hours.">
+              Füll das Formular aus oder schreib mir direkt — ich melde mich innerhalb von 24 Stunden bei dir.
+            </p>
+            <div class="contact__channels">
+              <a class="contact__channel" href="mailto:robin@maly-development.de" aria-label="E-Mail an Robin Maly">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <span>robin@maly-development.de</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <form class="contact__form animate-on-scroll" style="--stagger-delay:150ms" id="contactForm" name="contact"
+            method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+            <!-- Netlify hidden fields -->
+            <input type="hidden" name="form-name" value="contact">
+            <p hidden><label>Bot-Feld: <input name="bot-field"></label></p>
+
+            <div class="form-group">
+              <label class="form-label" for="name" data-de="Dein Name" data-en="Your Name">Dein Name</label>
+              <input class="form-input" type="text" id="name" name="name" required autocomplete="name"
+                data-de-placeholder="Max Mustermann" data-en-placeholder="John Doe" placeholder="Max Mustermann">
+              <span class="form-error" role="alert" aria-live="polite" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email" data-de="E-Mail-Adresse"
+                data-en="Email Address">E-Mail-Adresse</label>
+              <input class="form-input" type="email" id="email" name="email" required autocomplete="email"
+                data-de-placeholder="max@beispiel.de" data-en-placeholder="john@example.com"
+                placeholder="max@beispiel.de">
+              <span class="form-error" role="alert" aria-live="polite" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject" data-de="Betreff" data-en="Subject">Betreff</label>
+              <input class="form-input" type="text" id="subject" name="subject"
+                data-de-placeholder="App-Entwicklung für mein Startup"
+                data-en-placeholder="App development for my startup" placeholder="App-Entwicklung für mein Startup">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message" data-de="Deine Nachricht" data-en="Your Message">Deine
+                Nachricht</label>
+              <textarea class="form-input form-textarea" id="message" name="message" rows="5" required
+                data-de-placeholder="Erzähl mir von deiner Idee — je mehr Details, desto besser."
+                data-en-placeholder="Tell me about your idea — the more details, the better."
+                placeholder="Erzähl mir von deiner Idee — je mehr Details, desto besser."></textarea>
+              <span class="form-error" role="alert" aria-live="polite" id="message-error"></span>
+            </div>
+
+            <!-- GDPR Checkbox -->
+            <div class="form-group form-group--checkbox">
+              <input type="checkbox" id="gdpr" name="gdpr" required class="form-checkbox">
+              <label for="gdpr" class="form-label form-label--checkbox">
+                <span data-de="Ich habe die " data-en="I have read the ">Ich habe die </span><a href="datenschutz.html"
+                  data-de="Datenschutzerklärung" data-en="Privacy Policy">Datenschutzerklärung</a><span
+                  data-de=" gelesen und stimme der Verarbeitung meiner Daten zu."
+                  data-en=" and agree to the processing of my data."> gelesen und stimme der Verarbeitung meiner Daten
+                  zu.</span>
+              </label>
+              <span class="form-error" role="alert" aria-live="polite" id="gdpr-error"
+                style="display:block; width:100%; margin-top:4px;"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text" data-de="Nachricht senden" data-en="Send Message">Nachricht senden</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <span data-de="Danke! Ich melde mich so bald wie möglich bei dir."
+                data-en="Thank you! I'll get back to you as soon as possible.">Danke! Ich melde mich so bald wie möglich
+                bei dir.</span>
+            </div>
+
+          </form>
+
         </div>
       </div>
+    </section>
 
-      <!-- Form -->
-      <form class="contact__form animate-on-scroll" style="--stagger-delay:150ms"
-            id="contactForm"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-            novalidate>
-        <!-- Netlify hidden fields -->
-        <input type="hidden" name="form-name" value="contact">
-        <p hidden><label>Bot-Feld: <input name="bot-field"></label></p>
+  </main>
 
-        <div class="form-group">
-          <label class="form-label" for="name" data-de="Dein Name" data-en="Your Name">Dein Name</label>
-          <input class="form-input" type="text" id="name" name="name"
-                 required autocomplete="name"
-                 data-de-placeholder="Max Mustermann"
-                 data-en-placeholder="John Doe"
-                 placeholder="Max Mustermann">
-          <span class="form-error" role="alert" aria-live="polite" id="name-error"></span>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="email" data-de="E-Mail-Adresse" data-en="Email Address">E-Mail-Adresse</label>
-          <input class="form-input" type="email" id="email" name="email"
-                 required autocomplete="email"
-                 data-de-placeholder="max@beispiel.de"
-                 data-en-placeholder="john@example.com"
-                 placeholder="max@beispiel.de">
-          <span class="form-error" role="alert" aria-live="polite" id="email-error"></span>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="subject" data-de="Betreff" data-en="Subject">Betreff</label>
-          <input class="form-input" type="text" id="subject" name="subject"
-                 data-de-placeholder="App-Entwicklung für mein Startup"
-                 data-en-placeholder="App development for my startup"
-                 placeholder="App-Entwicklung für mein Startup">
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="message" data-de="Deine Nachricht" data-en="Your Message">Deine Nachricht</label>
-          <textarea class="form-input form-textarea" id="message" name="message"
-                    rows="5" required
-                    data-de-placeholder="Erzähl mir von deiner Idee — je mehr Details, desto besser."
-                    data-en-placeholder="Tell me about your idea — the more details, the better."
-                    placeholder="Erzähl mir von deiner Idee — je mehr Details, desto besser."></textarea>
-          <span class="form-error" role="alert" aria-live="polite" id="message-error"></span>
-        </div>
-
-        <!-- GDPR Checkbox -->
-        <div class="form-group form-group--checkbox">
-          <input type="checkbox" id="gdpr" name="gdpr" required class="form-checkbox">
-          <label for="gdpr" class="form-label form-label--checkbox">
-            <span data-de="Ich habe die " data-en="I have read the ">Ich habe die </span><a href="datenschutz.html" data-de="Datenschutzerklärung" data-en="Privacy Policy">Datenschutzerklärung</a><span data-de=" gelesen und stimme der Verarbeitung meiner Daten zu." data-en=" and agree to the processing of my data."> gelesen und stimme der Verarbeitung meiner Daten zu.</span>
-          </label>
-          <span class="form-error" role="alert" aria-live="polite" id="gdpr-error" style="display:block; width:100%; margin-top:4px;"></span>
-        </div>
-
-        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
-          <span class="btn__text" data-de="Nachricht senden" data-en="Send Message">Nachricht senden</span>
-          <span class="btn__spinner" aria-hidden="true"></span>
-        </button>
-
-        <!-- Success message (hidden by default) -->
-        <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
-          <span data-de="Danke! Ich melde mich so bald wie möglich bei dir." data-en="Thank you! I'll get back to you as soon as possible.">Danke! Ich melde mich so bald wie möglich bei dir.</span>
-        </div>
-
-      </form>
-
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ═══════════════════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer__top">
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
 
-      <!-- Brand -->
-      <div class="footer__brand">
-        <a href="/" aria-label="Maly Development — Startseite">
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-            <rect width="36" height="36" rx="9" fill="url(#logo-grad-footer)"/>
-            <defs>
-              <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="36" y2="36">
-                <stop offset="0%" stop-color="#6366F1"/>
-                <stop offset="100%" stop-color="#3B82F6"/>
-              </linearGradient>
-            </defs>
-            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                  font-family="Syne, sans-serif" font-weight="800" font-size="13"
-                  fill="white" letter-spacing="-0.5">MD</text>
-          </svg>
-        </a>
-        <p class="footer__brand-name">Maly Development</p>
-        <p class="footer__tagline"
-           data-de="Softwareentwicklung aus Deutschland."
-           data-en="Software development from Germany.">
-          Softwareentwicklung aus Deutschland.
-        </p>
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="/" aria-label="Maly Development — Startseite">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect width="36" height="36" rx="9" fill="url(#logo-grad-footer)" />
+              <defs>
+                <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="36" y2="36">
+                  <stop offset="0%" stop-color="#6366F1" />
+                  <stop offset="100%" stop-color="#3B82F6" />
+                </linearGradient>
+              </defs>
+              <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Syne, sans-serif"
+                font-weight="800" font-size="13" fill="white" letter-spacing="-0.5">MD</text>
+            </svg>
+          </a>
+          <p class="footer__brand-name">Maly Development</p>
+          <p class="footer__tagline" data-de="Softwareentwicklung aus Deutschland."
+            data-en="Software development from Germany.">
+            Softwareentwicklung aus Deutschland.
+          </p>
+        </div>
+
+        <!-- Navigation columns -->
+        <nav class="footer__nav" aria-label="Footer-Navigation">
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading" data-de="Seiten" data-en="Pages">Seiten</h3>
+            <a href="#about" data-de="Über mich" data-en="About">Über mich</a>
+            <a href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
+            <a href="#projects" data-de="Projekte" data-en="Projects">Projekte</a>
+            <a href="#process" data-de="Vorgehen" data-en="Process">Vorgehen</a>
+            <a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a>
+          </div>
+          <div class="footer__nav-col">
+            <h3 class="footer__nav-heading">Legal</h3>
+            <a href="impressum.html" data-de="Impressum" data-en="Legal Notice">Impressum</a>
+            <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a>
+            <a href="agb.html" data-de="AGB" data-en="Terms">AGB</a>
+          </div>
+        </nav>
       </div>
 
-      <!-- Navigation columns -->
-      <nav class="footer__nav" aria-label="Footer-Navigation">
-        <div class="footer__nav-col">
-          <h3 class="footer__nav-heading" data-de="Seiten" data-en="Pages">Seiten</h3>
-          <a href="#about"    data-de="Über mich"  data-en="About">Über mich</a>
-          <a href="#services" data-de="Leistungen" data-en="Services">Leistungen</a>
-          <a href="#projects" data-de="Projekte"   data-en="Projects">Projekte</a>
-          <a href="#process"  data-de="Vorgehen"   data-en="Process">Vorgehen</a>
-          <a href="#contact"  data-de="Kontakt"    data-en="Contact">Kontakt</a>
-        </div>
-        <div class="footer__nav-col">
-          <h3 class="footer__nav-heading">Legal</h3>
-          <a href="impressum.html"   data-de="Impressum"       data-en="Legal Notice">Impressum</a>
-          <a href="datenschutz.html" data-de="Datenschutz"     data-en="Privacy Policy">Datenschutz</a>
-          <a href="agb.html"         data-de="AGB"             data-en="Terms">AGB</a>
-        </div>
-      </nav>
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © <span id="currentYear"></span> Maly Development — Robin Maly
+        </p>
+      </div>
     </div>
+  </footer>
 
-    <div class="footer__bottom">
-      <p class="footer__copy">
-        © <span id="currentYear"></span> Maly Development — Robin Maly
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
