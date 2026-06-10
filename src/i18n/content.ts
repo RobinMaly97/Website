@@ -107,7 +107,7 @@ export const projectAssets = [
   },
 ] as const;
 
-export const EMAIL = 'robin@maly-development.de';
+export const EMAIL = 'info@maly-development.de';
 
 const de: SiteContent = {
   nav: {
