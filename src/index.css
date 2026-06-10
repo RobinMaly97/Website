@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   DESIGN TOKENS  —  violet + cyan neon on near-black
+   Values are raw RGB channels so Tailwind can apply opacity:
+   e.g. text-fg/70, bg-violet/20
+   ============================================================ */
+:root {
+  --bg: 10 11 18;          /* #0A0B12 near-black */
+  --bg-soft: 15 17 26;     /* slightly lifted */
+  --surface: 20 23 36;     /* card surface */
+  --fg: 245 247 255;       /* #F5F7FF */
+  --muted: 160 167 194;    /* muted text — ~7:1 on bg */
+  --border: 40 44 64;      /* hairline borders */
+  --violet: 124 108 255;   /* #7C6CFF */
+  --cyan: 34 211 238;      /* #22D3EE */
+}
+
+/* Light theme — calmer palette; accents deepened for contrast on light */
+.light {
+  --bg: 246 247 251;       /* #F6F7FB soft off-white */
+  --bg-soft: 255 255 255;
+  --surface: 255 255 255;  /* white cards */
+  --fg: 20 22 42;          /* #14162A deep slate */
+  --muted: 92 99 122;      /* readable medium slate */
+  --border: 224 228 240;   /* light hairline */
+  --violet: 91 79 224;     /* #5B4FE0 deeper violet */
+  --cyan: 14 151 184;      /* #0E97B8 deeper cyan */
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    overflow-x: hidden;
+    font-feature-settings: 'cv11', 'ss01';
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Accessible focus ring */
+  :focus-visible {
+    outline: 2px solid rgb(var(--cyan));
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: rgb(var(--violet) / 0.35);
+    color: rgb(var(--fg));
+  }
+
+  /* Subtle custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--bg));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--border));
+    border-radius: 999px;
+    border: 2px solid rgb(var(--bg));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--violet) / 0.6);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tightest;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* ============================================================
+   LENIS smooth-scroll recommended styles
+   ============================================================ */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ============================================================
+   COMPONENT UTILITIES
+   ============================================================ */
+@layer components {
+  /* Glassmorphism card */
+  .glass {
+    background: linear-gradient(
+      160deg,
+      rgb(var(--surface) / 0.7),
+      rgb(var(--surface) / 0.35)
+    );
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgb(var(--fg) / 0.08);
+  }
+
+  /* Gradient accent text */
+  .text-gradient {
+    background-image: linear-gradient(110deg, rgb(var(--violet)), rgb(var(--cyan)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Brighter gradient for large text that sits over the 3D orb */
+  .text-gradient-bright {
+    background-image: linear-gradient(110deg, #ABA0FF, #74ECFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Hairline divider with glow */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--border)),
+      transparent
+    );
+  }
+
+  /* Section vertical rhythm */
+  .section {
+    @apply relative py-24 md:py-36;
+  }
+
+  .container-px {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-8;
+  }
+
+  /* Eyebrow label */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.22em] text-muted;
+  }
+}
+
+/* ============================================================
+   TEXT LEGIBILITY  —  subtle shadow halo so copy stays readable
+   over the moving 3D background, with no visible panel/backdrop
+   ============================================================ */
+@layer utilities {
+  .text-shadow-soft {
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 3px 16px rgb(0 0 0 / 0.5);
+  }
+  .text-shadow-strong {
+    text-shadow:
+      0 0 1px rgb(0 0 0 / 0.65),
+      0 1px 2px rgb(0 0 0 / 0.8),
+      0 2px 10px rgb(0 0 0 / 0.6),
+      0 4px 22px rgb(0 0 0 / 0.45);
+  }
+  /* drop-shadow filter works on gradient (background-clipped) text where
+     text-shadow does not — shadows the actual rendered glyphs. */
+  .drop-shadow-legible {
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.75)) drop-shadow(0 3px 14px rgb(0 0 0 / 0.5));
+  }
+}
+
+/* ============================================================
+   LIGHT THEME OVERRIDES  (non-layered so they win over @layer rules)
+   ============================================================ */
+.light .text-gradient-bright {
+  /* Dark indigo → dark teal: high contrast against the (now paler) orb */
+  background-image: linear-gradient(110deg, #281F86, #0A5667);
+}
+.light .glass {
+  background: linear-gradient(160deg, rgb(255 255 255 / 0.85), rgb(255 255 255 / 0.6));
+  border-color: rgb(var(--fg) / 0.08);
+  box-shadow: 0 12px 32px -16px rgb(20 22 42 / 0.18);
+}
+/* Text shadows are a dark-mode legibility aid; not needed on light. */
+.light .text-shadow-strong,
+.light .text-shadow-soft {
+  text-shadow: none;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border: 2px solid rgb(var(--bg));
+}
+
+/* ============================================================
+   REDUCED MOTION  —  honour the user's OS preference
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<!--
+  Static form definition so Netlify's build-time bot can register the "contact"
+  form. The live React form (src/components/Contact.tsx) submits to this same
+  form name via fetch. This file is never shown to users.
+-->
+
+<head>
+  <meta charset="utf-8" />
+  <title>Forms</title>
+</head>
+
+<body>
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+    <input type="checkbox" name="gdpr" />
+  </form>
+</body>
+
+</html>

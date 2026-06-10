@@ -3,17 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="AGB und Nutzungsbedingungen von Maly Development — Robin Maly, Freelance App-Entwickler">
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/legal.css">
-  <script>try{if(localStorage.getItem('md-theme')==='light')document.documentElement.classList.add('light');if(localStorage.getItem('md-lang')==='en'){document.documentElement.classList.add('md-en');document.documentElement.setAttribute('lang','en');}}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
   <title>AGB — Maly Development</title>
   <style>
     .legal-page {
@@ -121,8 +116,6 @@
   </style>
 </head>
 <body>
-  <div id="legal-bg" aria-hidden="true"></div>
-  <div id="legal-scrim" aria-hidden="true"></div>
   <header class="nav nav--scrolled" role="banner">
     <div class="nav__container container">
       <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
@@ -130,34 +123,22 @@
           <rect width="36" height="36" rx="9" fill="url(#logo-grad-agb)"/>
           <defs>
             <linearGradient id="logo-grad-agb" x1="0" y1="0" x2="36" y2="36">
-              <stop offset="0%" stop-color="#7C6CFF"/>
-              <stop offset="100%" stop-color="#22D3EE"/>
+              <stop offset="0%" stop-color="#6366F1"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
             </linearGradient>
           </defs>
           <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13"
-                fill="#0A0B12" letter-spacing="-0.5">MD</text>
+                font-family="Space Grotesk, sans-serif" font-weight="800" font-size="13"
+                fill="white" letter-spacing="-0.5">MD</text>
         </svg>
         <span class="nav__logo-text">Maly Development</span>
       </a>
-      <div class="nav__actions">
-        <div class="lang-toggle" role="group" aria-label="Sprache / Language">
-          <button type="button" data-lang="de" onclick="mdSetLang('de')">DE</button>
-          <button type="button" data-lang="en" onclick="mdSetLang('en')">EN</button>
-        </div>
-        <button class="theme-toggle" type="button" aria-label="Design wechseln"
-          onclick="(function(){var l=document.documentElement.classList.toggle('light');try{localStorage.setItem('md-theme',l?'light':'dark')}catch(e){}})()">
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        </button>
-        <a href="/" class="btn btn--ghost btn--sm"><span class="lang-de">← Zurück zur Website</span><span class="lang-en">← Back to Website</span></a>
-      </div>
+      <a href="/" class="btn btn--ghost btn--sm">← Zurück zur Website</a>
     </div>
   </header>
 
   <main class="legal-page">
     <div class="container">
-      <div class="lang-de">
       <a href="/" class="back-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
@@ -340,186 +321,6 @@
 
       <hr class="legal-divider">
       <p style="font-size: 0.8rem; color: var(--color-text-muted);">Stand: März 2026</p>
-      </div>
-
-      <div class="lang-en">
-      <a href="/" class="back-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
-        </svg>
-        Back to Website
-      </a>
-
-      <h1 id="terms-of-use">Terms of Use for the Website</h1>
-      <p class="legal-meta">Last updated: 13 March 2026 · Maly Development · Courtesy translation — the German version is legally binding.</p>
-
-      <div class="toc">
-        <p>Contents</p>
-        <ol>
-          <li><a href="#nbe-1">Scope and acceptance</a></li>
-          <li><a href="#nbe-2">Use of the website</a></li>
-          <li><a href="#nbe-3">Content and copyright</a></li>
-          <li><a href="#nbe-4">User-provided content</a></li>
-          <li><a href="#nbe-5">Prohibited content and conduct</a></li>
-          <li><a href="#nbe-6">Disclaimer for website content</a></li>
-          <li><a href="#nbe-7">Limitation of liability</a></li>
-          <li><a href="#nbe-8">Termination / blocking of access</a></li>
-          <li><a href="#nbe-9">Applicable law and place of jurisdiction</a></li>
-          <li><a href="#nbe-10">Cookie notice</a></li>
-        </ol>
-      </div>
-
-      <h2 id="nbe-1">1. Scope and acceptance</h2>
-      <p>(1) These terms of use govern the use of the website available under the domain of Maly Development as well as any online functions provided through it (e.g. contact form, client area).</p>
-      <p>(2) By accessing or using this website, you agree to these terms of use. If you do not agree to the terms, you may not use the website.</p>
-      <p>(3) Maly Development reserves the right to amend these terms of use at any time with effect for the future. The decisive version is the one published on the website at the time, bearing the date stated there.</p>
-
-      <h2 id="nbe-2">2. Use of the website</h2>
-      <p>(1) The website may only be used within the framework of statutory provisions and these terms of use.</p>
-      <p>(2) Use for unlawful purposes, to disrupt the functionality of the website, or to obtain data without authorisation is prohibited.</p>
-      <p>(3) Insofar as a protected area (e.g. client portal) is provided, you are obliged to keep access data confidential and to protect it against access by unauthorised third parties.</p>
-
-      <h2 id="nbe-3">3. Content and copyright</h2>
-      <p>(1) All content published on this website — in particular texts, graphics, images, designs, and software — is protected by copyright and, unless otherwise indicated, is the property of Robin Maly – Maly Development.</p>
-      <p>(2) Any use, reproduction, editing, or distribution of this content beyond the legally permitted use requires the prior express written consent of Maly Development.</p>
-      <p>(3) Trademarks, logos, and other marks of third parties are used solely for descriptive purposes and remain the property of the respective rights holders.</p>
-
-      <h2 id="nbe-4">4. User-provided content</h2>
-      <p>(1) Insofar as users can provide content via forms, upload functions, or similar features ("user content"), they warrant that they are entitled to use and distribute this content and that they do not infringe the rights of third parties.</p>
-      <p>(2) The user indemnifies Maly Development against all third-party claims based on an infringing use of the provided content, including reasonable costs of legal defence.</p>
-      <p>(3) Maly Development is entitled to block or delete user content that violates these terms of use or applicable law at any time.</p>
-
-      <h2 id="nbe-5">5. Prohibited content and conduct</h2>
-      <p>In particular, it is prohibited to transmit content via the website that:</p>
-      <ul>
-        <li>infringes the rights of third parties (e.g. copyright, trademark, or personality rights),</li>
-        <li>violates applicable law or incites legal violations,</li>
-        <li>is fraudulent, misleading, or deceptive,</li>
-        <li>is defamatory, obscene, pornographic, vulgar, or offensive,</li>
-        <li>promotes discrimination, racism, hatred, harassment, or violence,</li>
-        <li>circumvents security mechanisms of the website or causes technical disruptions.</li>
-      </ul>
-
-      <h2 id="nbe-6">6. Disclaimer for website content</h2>
-      <p>(1) The content of this website was created with the greatest care. However, no guarantee is given for the accuracy, completeness, and timeliness of the content.</p>
-      <p>(2) Maly Development is liable for damages arising from the use or non-use of the website only in accordance with Section 7 (limitation of liability).</p>
-      <p>(3) This website may contain links to external third-party websites over whose content Maly Development has no influence. No guarantee is assumed for this external content; the respective provider or operator of the pages is responsible. Upon becoming aware of legal violations, the relevant links will be removed immediately.</p>
-
-      <h2 id="nbe-7">7. Limitation of liability</h2>
-      <p>(1) Maly Development is liable for damages — regardless of the legal basis — only in the event of:</p>
-      <ul>
-        <li>intent or gross negligence,</li>
-        <li>injury to life, body, or health,</li>
-        <li>breach of essential contractual obligations (cardinal obligations) whose fulfilment makes the proper use of the website possible in the first place and on whose compliance the user may regularly rely.</li>
-      </ul>
-      <p>(2) In the event of a slightly negligent breach of cardinal obligations, liability is limited to the typically foreseeable damage.</p>
-      <p>(3) Any further liability, in particular for indirect damages, lost profits, or data loss, is excluded insofar as legally permissible.</p>
-      <p>(4) Mandatory statutory liability provisions (e.g. under the German Product Liability Act) remain unaffected.</p>
-
-      <h2 id="nbe-8">8. Termination / blocking of access</h2>
-      <p>Maly Development may restrict or discontinue access to the website or to individual functions at any time, in particular for maintenance, security reasons, or in the event of violations of these terms of use. There is no entitlement to the constant availability of the website.</p>
-
-      <h2 id="nbe-9">9. Applicable law and place of jurisdiction</h2>
-      <p>(1) The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods.</p>
-      <p>(2) If the user is a merchant, a legal entity under public law, or a special fund under public law, the registered office of Robin Maly is — insofar as legally permissible — the exclusive place of jurisdiction.</p>
-      <p>(3) Mandatory consumer rights remain unaffected.</p>
-
-      <h2 id="nbe-10">10. Cookie notice</h2>
-      <div class="legal-notice-box">
-        <p>According to the current status, our website does not use any cookies that require consent (in particular no tracking, analytics, or marketing cookies). Insofar as technically necessary technologies are used, this is done exclusively to provide the website and its basic functions.</p>
-      </div>
-      <p>Further information can be found in our <a href="datenschutz.html">privacy policy</a>.</p>
-
-      <hr class="legal-divider">
-
-      <h2 class="legal-section-title" id="terms-development">General Terms and Conditions (GTC) for Development Services</h2>
-      <p class="legal-meta">Robin Maly – Maly Development · Hasselkamp 13, 45481 Mülheim an der Ruhr</p>
-
-      <div class="toc">
-        <p>Contents</p>
-        <ol>
-          <li><a href="#agbe-1">Scope</a></li>
-          <li><a href="#agbe-2">Conclusion of contract</a></li>
-          <li><a href="#agbe-3">Scope of services</a></li>
-          <li><a href="#agbe-4">Client's duties to cooperate</a></li>
-          <li><a href="#agbe-5">Remuneration and payment terms</a></li>
-          <li><a href="#agbe-6">Deadlines and delays</a></li>
-          <li><a href="#agbe-7">Acceptance</a></li>
-          <li><a href="#agbe-8">Rights of use</a></li>
-          <li><a href="#agbe-9">Warranty</a></li>
-          <li><a href="#agbe-10">Liability</a></li>
-          <li><a href="#agbe-11">Confidentiality and data protection</a></li>
-          <li><a href="#agbe-12">Term and termination</a></li>
-          <li><a href="#agbe-13">Final provisions</a></li>
-        </ol>
-      </div>
-
-      <h2 id="agbe-1">1. Scope</h2>
-      <p>(1) These GTC apply to all contracts between Maly Development and its clients concerning the provision of development, design, consulting, and other IT services (e.g. web and app development), unless expressly agreed otherwise.</p>
-      <p>(2) The GTC apply exclusively to entrepreneurs within the meaning of § 14 BGB (German Civil Code), legal entities under public law, and special funds under public law.</p>
-
-      <h2 id="agbe-2">2. Conclusion of contract</h2>
-      <p>(1) Offers from Maly Development are non-binding unless expressly marked as binding.</p>
-      <p>(2) A contract is concluded when the client accepts an offer from Maly Development in writing or in text form (e.g. email), or when Maly Development begins performing the service.</p>
-
-      <h2 id="agbe-3">3. Scope of services</h2>
-      <p>(1) The type and scope of the services owed result from the respective offer, project contract, specification sheet, or other written service description.</p>
-      <p>(2) Change and extension requests by the client after conclusion of the contract require a separate agreement and may lead to adjustments of remuneration and deadlines.</p>
-      <p>(3) Maly Development provides the services under its own responsibility and according to its own technical discretion, taking into account the agreed requirements.</p>
-
-      <h2 id="agbe-4">4. Client's duties to cooperate</h2>
-      <p>(1) The client provides all information, content (e.g. texts, images, logos), and access required for carrying out the project in good time, completely, and in a suitable form.</p>
-      <p>(2) The client is responsible for the rights to the content it supplies and indemnifies Maly Development against all third-party claims in this respect.</p>
-      <p>(3) If the provision of services is delayed due to missing or late cooperation by the client, agreed deadlines are extended appropriately. Additional expenses incurred may be charged separately.</p>
-
-      <h2 id="agbe-5">5. Remuneration and payment terms</h2>
-      <p>(1) The remuneration results from the respective offer (hourly rates, daily rates, or fixed prices). All stated prices are exclusive of statutory value added tax, where applicable.</p>
-      <p>(2) Unless otherwise agreed, services are billed according to time and effort. Maly Development is entitled to demand reasonable advance or instalment payments.</p>
-      <p>(3) Unless otherwise stated, invoices are due within 14 days of receipt without deduction. In the event of default in payment, Maly Development is entitled to demand statutory default interest and to withhold further services until payment.</p>
-
-      <h2 id="agbe-6">6. Deadlines and delays</h2>
-      <p>(1) Service and completion dates are only binding if they have been expressly agreed as such.</p>
-      <p>(2) If delays occur due to force majeure, technical disruptions outside the responsibility of Maly Development, or due to cooperation by the client that is not provided or provided late, deadlines shift accordingly. Claims for damages due to such delays are excluded.</p>
-
-      <h2 id="agbe-7">7. Acceptance</h2>
-      <p>(1) Insofar as the services have the character of a contract for work (e.g. creation of a website or app), the client is obliged to accept them.</p>
-      <p>(2) After completion, Maly Development may request acceptance within a reasonable period. Acceptance may not be refused on account of insignificant defects.</p>
-      <p>(3) A service is deemed accepted after a reasonable period and putting into operation by the client, provided no significant defects are reported.</p>
-
-      <h2 id="agbe-8">8. Rights of use</h2>
-      <p>(1) Unless expressly agreed otherwise, Maly Development grants the client, upon full payment, a simple, non-exclusive right of use, unlimited in time and space, to the work results created within the project, insofar as this is necessary for the contractually intended use.</p>
-      <p>(2) A transfer of the rights of use to third parties or use for purposes other than those contractually agreed requires a separate agreement.</p>
-      <p>(3) Maly Development remains the author of the works created and is entitled to name the results to a reasonable extent as a reference, unless the client objects for good cause.</p>
-
-      <h2 id="agbe-9">9. Warranty</h2>
-      <p>(1) For services governed by contract-for-work law, the statutory warranty rights apply, unless otherwise stipulated below.</p>
-      <p>(2) The client must inspect services without delay after provision and report recognisable defects without delay.</p>
-      <p>(3) Maly Development is initially entitled to subsequent performance (defect rectification or replacement). If subsequent performance fails, the client may reduce the price or withdraw from the contract in accordance with statutory provisions.</p>
-
-      <h2 id="agbe-10">10. Liability</h2>
-      <p>(1) Maly Development is liable without limitation in the event of intent and gross negligence, as well as for injury to life, body, or health.</p>
-      <p>(2) In the case of slight negligence, Maly Development is only liable for the breach of essential contractual obligations (cardinal obligations). In this case, liability is limited to the foreseeable damage typical of the contract.</p>
-      <p>(3) Liability for indirect damages, lost profits, lost savings, and other financial losses is excluded insofar as legally permissible.</p>
-      <p>(4) Maly Development is liable for the loss of data only insofar as the client has ensured, through suitable and regular data backups, that the data can be restored with reasonable effort.</p>
-      <p>(5) The limitations of liability do not apply insofar as mandatory statutory provisions stand in the way (e.g. the Product Liability Act).</p>
-
-      <h2 id="agbe-11">11. Confidentiality and data protection</h2>
-      <p>(1) Both contracting parties undertake to keep secret confidential information of the other party that becomes known to them within the framework of the contract and to use it only for the contractually agreed purposes.</p>
-      <p>(2) Maly Development processes personal data exclusively within the framework of statutory provisions (in particular the GDPR) and the respective valid <a href="datenschutz.html">privacy policy</a>.</p>
-
-      <h2 id="agbe-12">12. Term and termination</h2>
-      <p>(1) Project contracts end with the provision of the service owed and, where applicable, acceptance.</p>
-      <p>(2) Continuing obligations (e.g. maintenance or support contracts) may, subject to differing agreements, be terminated with a notice period of 4 weeks to the end of the month.</p>
-      <p>(3) The right to extraordinary termination for good cause remains unaffected. Good cause exists in particular if one party culpably breaches essential contractual obligations despite a warning.</p>
-
-      <h2 id="agbe-13">13. Final provisions</h2>
-      <p>(1) The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods.</p>
-      <p>(2) The exclusive place of jurisdiction for all disputes arising from or in connection with these GTC is — insofar as legally permissible — the registered office of Maly Development.</p>
-      <p>(3) Should individual provisions of these GTC be or become invalid, the validity of the remaining provisions remains unaffected.</p>
-
-      <hr class="legal-divider">
-      <p style="font-size: 0.8rem; color: var(--color-text-muted);">Last updated: March 2026</p>
-      </div>
     </div>
   </main>
 
@@ -536,10 +337,5 @@
   <script>
     document.getElementById('currentYear2').textContent = new Date().getFullYear();
   </script>
-  <script>
-    function mdSetLang(l){var en=l==='en';document.documentElement.classList.toggle('md-en',en);document.documentElement.setAttribute('lang',l);try{localStorage.setItem('md-lang',l)}catch(e){}document.querySelectorAll('.lang-toggle button').forEach(function(b){b.classList.toggle('is-active',b.getAttribute('data-lang')===l)});}
-    (function(){var l='de';try{if(localStorage.getItem('md-lang')==='en')l='en'}catch(e){}document.querySelectorAll('.lang-toggle button').forEach(function(b){b.classList.toggle('is-active',b.getAttribute('data-lang')===l)});})();
-  </script>
-  <script type="module" src="/src/legal-bg.tsx"></script>
 </body>
 </html>

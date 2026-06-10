@@ -1,0 +1,21 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback — every non-file route serves the React app.
+# Netlify serves real static files (impressum.html, datenschutz.html, agb.html,
+# __forms.html, /images/*) BEFORE applying this rule, so the legal pages and
+# Netlify Forms detection keep working.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Long-cache the fingerprinted build assets.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

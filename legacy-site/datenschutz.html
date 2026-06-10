@@ -3,17 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="Datenschutzerklärung von Maly Development — Robin Maly, Freelance App-Entwickler">
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/legal.css">
-  <script>try{if(localStorage.getItem('md-theme')==='light')document.documentElement.classList.add('light');if(localStorage.getItem('md-lang')==='en'){document.documentElement.classList.add('md-en');document.documentElement.setAttribute('lang','en');}}catch(e){}</script>
+  <link rel="stylesheet" href="style.css">
   <title>Datenschutzerklärung — Maly Development</title>
   <style>
     .legal-page {
@@ -100,8 +95,6 @@
   </style>
 </head>
 <body>
-  <div id="legal-bg" aria-hidden="true"></div>
-  <div id="legal-scrim" aria-hidden="true"></div>
   <header class="nav nav--scrolled" role="banner">
     <div class="nav__container container">
       <a href="/" class="nav__logo" aria-label="Maly Development — Startseite">
@@ -109,34 +102,22 @@
           <rect width="36" height="36" rx="9" fill="url(#logo-grad-ds)"/>
           <defs>
             <linearGradient id="logo-grad-ds" x1="0" y1="0" x2="36" y2="36">
-              <stop offset="0%" stop-color="#7C6CFF"/>
-              <stop offset="100%" stop-color="#22D3EE"/>
+              <stop offset="0%" stop-color="#6366F1"/>
+              <stop offset="100%" stop-color="#3B82F6"/>
             </linearGradient>
           </defs>
           <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13"
-                fill="#0A0B12" letter-spacing="-0.5">MD</text>
+                font-family="Space Grotesk, sans-serif" font-weight="800" font-size="13"
+                fill="white" letter-spacing="-0.5">MD</text>
         </svg>
         <span class="nav__logo-text">Maly Development</span>
       </a>
-      <div class="nav__actions">
-        <div class="lang-toggle" role="group" aria-label="Sprache / Language">
-          <button type="button" data-lang="de" onclick="mdSetLang('de')">DE</button>
-          <button type="button" data-lang="en" onclick="mdSetLang('en')">EN</button>
-        </div>
-        <button class="theme-toggle" type="button" aria-label="Design wechseln"
-          onclick="(function(){var l=document.documentElement.classList.toggle('light');try{localStorage.setItem('md-theme',l?'light':'dark')}catch(e){}})()">
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        </button>
-        <a href="/" class="btn btn--ghost btn--sm"><span class="lang-de">← Zurück zur Website</span><span class="lang-en">← Back to Website</span></a>
-      </div>
+      <a href="/" class="btn btn--ghost btn--sm">← Zurück zur Website</a>
     </div>
   </header>
 
   <main class="legal-page">
     <div class="container">
-      <div class="lang-de">
       <a href="/" class="back-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
@@ -237,110 +218,6 @@
 
       <hr class="legal-divider">
       <p style="font-size: 0.8rem; color: var(--color-text-muted);">Stand: März 2026</p>
-      </div>
-
-      <div class="lang-en">
-      <a href="/" class="back-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>
-        </svg>
-        Back to Website
-      </a>
-
-      <h1>Privacy Policy</h1>
-      <p class="legal-meta">Last updated: March 2026 · Maly Development · Courtesy translation — the German version is legally binding.</p>
-
-      <div class="toc">
-        <p>Contents</p>
-        <ol>
-          <li><a href="#dse-1">Controller</a></li>
-          <li><a href="#dse-2">General information on data processing</a></li>
-          <li><a href="#dse-3">Server log files</a></li>
-          <li><a href="#dse-4">Contact form</a></li>
-          <li><a href="#dse-5">Web fonts (Google Fonts)</a></li>
-          <li><a href="#dse-6">Local storage (localStorage)</a></li>
-          <li><a href="#dse-7">Use of further services</a></li>
-          <li><a href="#dse-8">Your rights</a></li>
-          <li><a href="#dse-9">Right to lodge a complaint with a supervisory authority</a></li>
-          <li><a href="#dse-10">Withdrawal of consent</a></li>
-          <li><a href="#dse-11">Validity and changes to this privacy policy</a></li>
-        </ol>
-      </div>
-
-      <h2 id="dse-1">1. Controller</h2>
-      <p>The controller within the meaning of the General Data Protection Regulation (GDPR) is:</p>
-      <address>
-        Robin Maly<br>
-        Maly Development<br>
-        Hasselkamp 13<br>
-        45481 Mülheim an der Ruhr<br>
-        Germany<br>
-        Email: <a href="mailto:robin@maly-development.de">robin@maly-development.de</a>
-      </address>
-
-      <h2 id="dse-2">2. General information on data processing</h2>
-      <p>(1) The protection of your personal data is important to Maly Development. Personal data is processed exclusively within the framework of legal provisions, in particular the GDPR and the German Federal Data Protection Act (BDSG).</p>
-      <p>(2) In this privacy policy we inform you about which data is processed when you use this website and which rights you have.</p>
-
-      <h2 id="dse-3">3. Server log files when visiting the website</h2>
-      <p>(1) When you access this website, certain information is automatically stored by the hosting provider in so-called server log files, which your browser transmits. These are in particular:</p>
-      <ul>
-        <li>Browser type and version</li>
-        <li>Operating system used</li>
-        <li>Referrer URL (previously visited page)</li>
-        <li>Host name of the accessing computer</li>
-        <li>Time of the server request</li>
-        <li>IP address</li>
-      </ul>
-      <p>(2) This data is not attributed to specific individuals and is not merged with other data sources.</p>
-      <p>(3) The legal basis for the processing is Art. 6 (1) (f) GDPR (legitimate interest in the secure and stable operation of the website, error analysis, and defense against attacks).</p>
-      <p>(4) The log files are stored for a period of 30 days and then deleted, unless further retention for evidentiary purposes is required in individual cases.</p>
-
-      <h2 id="dse-4">4. Contact form</h2>
-      <p>(1) If you use the contact form on this website, the data you enter (name, email address, subject, and message) is processed for the purpose of handling your request and in case of follow-up questions.</p>
-      <p>(2) The legal bases are Art. 6 (1) (b) GDPR (initiation or performance of a contractual relationship) and Art. 6 (1) (a) GDPR (your consent, e.g. by actively ticking a checkbox).</p>
-      <p>(3) The form data is transmitted via the service "Netlify Forms" (Netlify, Inc., 44 Montgomery Street, Suite 300, San Francisco, CA 94104, USA). Netlify processes the data on servers in the USA. A data processing agreement exists with Netlify. Insofar as data is transferred to a third country, this is done on the basis of appropriate safeguards (e.g. the EU Commission's standard contractual clauses). Further information at <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener noreferrer">netlify.com/privacy</a>.</p>
-      <p>(4) The data processed via the contact form is deleted once your request has been conclusively answered and no further communication is required, but no later than after 2 years, provided no statutory retention obligations preclude this.</p>
-
-      <h2 id="dse-5">5. Web fonts (Google Fonts)</h2>
-      <p>(1) This website uses fonts ("Google Fonts") provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. When a page is loaded, your browser loads the required web fonts from Google's servers, whereby your IP address and possibly further technical information is transmitted to Google.</p>
-      <p>(2) The legal basis is Art. 6 (1) (f) GDPR (legitimate interest in a uniform and appealing presentation of the website).</p>
-      <p>(3) Further information at <a href="https://developers.google.com/fonts/faq/privacy" target="_blank" rel="noopener noreferrer">developers.google.com/fonts/faq/privacy</a> and in Google's general privacy policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
-
-      <h2 id="dse-6">6. Local storage (localStorage)</h2>
-      <p>(1) This website uses your browser's so-called localStorage to save your preferred language (German or English) and theme.</p>
-      <p>(2) Only technical settings without personal reference are stored. No tracking data is collected and no personal profiles are created.</p>
-      <p>(3) Consent is not required for this under § 25 (2) no. 2 TTDSG, as it is a technically necessary function for providing the website.</p>
-
-      <h2 id="dse-7">7. Use of further services</h2>
-      <p>Currently, no further analytics or tracking services and no embedded third-party services (e.g. YouTube, Google Maps) are used.</p>
-
-      <h2 id="dse-8">8. Your rights</h2>
-      <p>With regard to the personal data concerning you, you have the following rights vis-à-vis us:</p>
-      <ul>
-        <li><strong>Right of access</strong> (Art. 15 GDPR)</li>
-        <li><strong>Right to rectification</strong> (Art. 16 GDPR)</li>
-        <li><strong>Right to erasure</strong> (Art. 17 GDPR)</li>
-        <li><strong>Right to restriction of processing</strong> (Art. 18 GDPR)</li>
-        <li><strong>Right to data portability</strong> (Art. 20 GDPR)</li>
-        <li><strong>Right to object to processing</strong> (Art. 21 GDPR)</li>
-      </ul>
-      <p>To exercise your rights, you can contact <a href="mailto:robin@maly-development.de">robin@maly-development.de</a> at any time.</p>
-
-      <h2 id="dse-9">9. Right to lodge a complaint with a supervisory authority</h2>
-      <p>You have the right to lodge a complaint with a data protection supervisory authority about the processing of your personal data. The authority responsible is, in particular, that of your habitual residence, your place of work, or the place of the alleged infringement.</p>
-      <p>An overview of the German supervisory authorities can be found at <a href="https://www.bfdi.bund.de/" target="_blank" rel="noopener noreferrer">bfdi.bund.de</a>.</p>
-
-      <h2 id="dse-10">10. Withdrawal of consent</h2>
-      <p>Insofar as the processing of your data is based on consent, you can withdraw this consent at any time with effect for the future. The lawfulness of the processing carried out up to the withdrawal remains unaffected.</p>
-      <p>An informal notification by email to <a href="mailto:robin@maly-development.de">robin@maly-development.de</a> is sufficient for the withdrawal.</p>
-
-      <h2 id="dse-11">11. Validity and changes to this privacy policy</h2>
-      <p>This privacy policy is currently valid and has the status of March 2026. Due to the further development of the website or because of changed legal or regulatory requirements, it may become necessary to amend this policy. The respective current version is available on this website at any time.</p>
-
-      <hr class="legal-divider">
-      <p style="font-size: 0.8rem; color: var(--color-text-muted);">Last updated: March 2026</p>
-      </div>
     </div>
   </main>
 
@@ -357,10 +234,5 @@
   <script>
     document.getElementById('currentYear3').textContent = new Date().getFullYear();
   </script>
-  <script>
-    function mdSetLang(l){var en=l==='en';document.documentElement.classList.toggle('md-en',en);document.documentElement.setAttribute('lang',l);try{localStorage.setItem('md-lang',l)}catch(e){}document.querySelectorAll('.lang-toggle button').forEach(function(b){b.classList.toggle('is-active',b.getAttribute('data-lang')===l)});}
-    (function(){var l='de';try{if(localStorage.getItem('md-lang')==='en')l='en'}catch(e){}document.querySelectorAll('.lang-toggle button').forEach(function(b){b.classList.toggle('is-active',b.getAttribute('data-lang')===l)});})();
-  </script>
-  <script type="module" src="/src/legal-bg.tsx"></script>
 </body>
 </html>
