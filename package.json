@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "typecheck": "tsc --noEmit",
-    "optimize:images": "node scripts/optimize-images.mjs"
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "build:mockups": "node scripts/build-mockups.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^9.114.3",

@@ -13,8 +13,6 @@ mkdirSync(OUT, { recursive: true });
 
 /** [source, output basename, target width, fallback format] */
 const jobs = [
-  ['screenshot-timetrackerprof.png', 'timetrackerprof-screen', 540, 'png'],
-  ['screenshot-finkenkrug.png', 'finkenkrug-screen', 540, 'png'],
   ['icon-timetrackerprof.png', 'timetrackerprof-icon', 180, 'png'],
   ['icon-finkenkrug.png', 'finkenkrug-icon', 180, 'png'],
   ['profile.jpg', 'profile', 880, 'jpg'],

@@ -74,7 +74,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-line/60 pt-6 sm:flex-row">
-          <p className="text-sm text-muted">© {year} Maly Development — Robin Maly</p>
+          <p className="text-sm text-muted">© {year} Maly Development · Robin Maly</p>
           <button
             type="button"
             onClick={() => scrollToTarget('#hero', 0)}
