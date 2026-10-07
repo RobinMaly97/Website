@@ -10,7 +10,7 @@ import { BrandLogo } from './ui/BrandLogo';
 function Logo() {
   return (
     <span className="inline-flex items-center gap-2.5">
-      <BrandLogo className="h-9 w-9" />
+      <BrandLogo className="h-8" />
       <span className="whitespace-nowrap font-display text-[15px] font-semibold tracking-tight text-fg">
         Maly Development
       </span>

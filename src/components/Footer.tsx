@@ -27,7 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <span className="inline-flex items-center gap-3">
-              <BrandLogo className="h-14 w-14" />
+              <BrandLogo className="h-11" />
               <span className="font-display text-base font-semibold text-fg">Maly Development</span>
             </span>
             <p className="mt-4 max-w-xs text-sm text-muted">{t.footer.tagline}</p>
