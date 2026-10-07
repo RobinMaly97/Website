@@ -140,6 +140,7 @@ const de: SiteContent = {
     trust: [
       { value: '3+', label: 'Apps live in den Stores' },
       { value: 'iOS', label: 'App Store' },
+      { value: 'Android', label: 'Google Play' },
       { value: '100%', label: 'Eigenentwicklung' },
     ],
   },
@@ -210,7 +211,7 @@ const de: SiteContent = {
       {
         name: 'TimeTrackerProf',
         category: 'Produktivität · iOS & Android',
-        body: 'Schluss mit Papierkram! Professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten erfassen, Projekte verwalten und Berichte exportieren.',
+        body: 'Schluss mit Papierkram! Professionelle Zeiterfassung für Freelancer und Selbstständige. Zeiten erfassen und Berichte exportieren.',
       },
       {
         name: 'Finkenkrug',
@@ -301,6 +302,7 @@ const en: SiteContent = {
     trust: [
       { value: '3+', label: 'Apps live in stores' },
       { value: 'iOS', label: 'App Store' },
+      { value: 'Android', label: 'Google Play' },
       { value: '100%', label: 'Self-developed' },
     ],
   },
@@ -371,7 +373,7 @@ const en: SiteContent = {
       {
         name: 'TimeTrackerProf',
         category: 'Productivity · iOS & Android',
-        body: 'No more paperwork! Professional time tracking for freelancers and the self-employed. Log hours, manage projects, and export reports.',
+        body: 'No more paperwork! Professional time tracking for freelancers and the self-employed. Log hours and export reports.',
       },
       {
         name: 'Finkenkrug',

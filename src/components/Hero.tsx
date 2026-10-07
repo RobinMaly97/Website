@@ -91,12 +91,12 @@ export function Hero() {
           {/* Trust indicators */}
           <motion.div
             variants={item}
-            className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-4"
+            className="mt-12 grid grid-cols-2 gap-x-6 gap-y-5 md:flex md:flex-wrap md:items-center md:gap-y-4"
             aria-label="Vertrauensindikatoren"
           >
             {t.hero.trust.map((tr, i) => (
               <div key={tr.label} className="flex items-center gap-6">
-                {i > 0 && <span className="h-8 w-px bg-line" aria-hidden="true" />}
+                {i > 0 && <span className="hidden h-8 w-px bg-line md:block" aria-hidden="true" />}
                 <div className="text-shadow-soft">
                   <div className="font-display text-2xl font-bold text-fg">{tr.value}</div>
                   <div className="text-xs uppercase tracking-wider text-muted">{tr.label}</div>

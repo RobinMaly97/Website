@@ -11,7 +11,7 @@ function Logo() {
   return (
     <span className="inline-flex items-center gap-2.5">
       <BrandLogo className="h-9 w-9" />
-      <span className="font-display text-[15px] font-semibold tracking-tight text-fg">
+      <span className="whitespace-nowrap font-display text-[15px] font-semibold tracking-tight text-fg">
         Maly Development
       </span>
     </span>
@@ -55,7 +55,7 @@ export function Nav() {
           <Logo />
         </a>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {links.map((l) => (
             <li key={l.id}>
               <a
@@ -84,7 +84,7 @@ export function Nav() {
           {/* Mobile hamburger */}
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-line/70 md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-line/70 lg:hidden"
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? 'Menü schließen' : 'Menü öffnen'}
@@ -120,7 +120,7 @@ export function Nav() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-line/60 bg-bg/90 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-t border-line/60 bg-bg/90 backdrop-blur-xl lg:hidden"
           >
             <ul className="container-px flex flex-col gap-1 py-4">
               {links.map((l) => (
