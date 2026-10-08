@@ -116,6 +116,7 @@ export const projectAssets: {
     icon: '/images/chickenlove-icon.webp',
     iconFallback: '/images/chickenlove-icon.png',
     mockups: mockups('chickenlove', 7),
+    appStore: 'https://apps.apple.com/de/app/chickenlove/id6803501674',
     playStore: 'https://play.google.com/store/apps/details?id=de.malydevelopment.chickenlove',
     tags: ['Kotlin', 'Jetpack Compose', 'Widgets'],
   },
@@ -220,7 +221,7 @@ const de: SiteContent = {
       },
       {
         name: 'ChickenLove',
-        category: 'Lifestyle · Android',
+        category: 'Lifestyle · iOS & Android',
         body: 'Das Stalltagebuch für Hobby-Hühnerhalter: Eier mit einem Tipp zählen, Legehennen verwalten, Gesundheit dokumentieren und die Brut begleiten. Funktioniert auch ohne Netz.',
       },
     ],
@@ -382,7 +383,7 @@ const en: SiteContent = {
       },
       {
         name: 'ChickenLove',
-        category: 'Lifestyle · Android',
+        category: 'Lifestyle · iOS & Android',
         body: 'The coop journal for hobby chicken keepers: count eggs with one tap, manage your laying hens, keep health records and follow every hatch. Works without signal, too.',
       },
     ],
