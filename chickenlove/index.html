@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChickenLove — Die App für Hühnerhalter | iOS & Android</title>
+  <meta name="description"
+    content="ChickenLove: Eier erfassen, Hühner verwalten, Gesundheit, Kosten, Brut & Schlupf und Schieren – alles in einer App. Jetzt für iPhone und Android." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#FBEFDD" />
+  <link rel="canonical" href="https://maly-development.de/chickenlove" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/chickenlove/icon-32.png" />
+  <link rel="apple-touch-icon" href="/images/chickenlove/icon-180.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maly-development.de/chickenlove" />
+  <meta property="og:title" content="ChickenLove — Deine Hühner. Alles im Blick." />
+  <meta property="og:description"
+    content="Die Allround-App für Hühnerhalter: Eier, Hühner, Gesundheit, Kosten, Brut & Schlupf. Für iOS & Android." />
+  <meta property="og:image" content="https://maly-development.de/images/chickenlove/og.jpg" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ChickenLove — Deine Hühner. Alles im Blick." />
+  <meta name="twitter:description" content="Die Allround-App für Hühnerhalter. Für iOS & Android." />
+  <meta name="twitter:image" content="https://maly-development.de/images/chickenlove/og.jpg" />
+
+  <!-- Fonts: Caprasimo (display) + Figtree (body) — same as the app -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="preload" as="image" href="/images/chickenlove/hero-heute.webp" />
+  <link rel="stylesheet" href="./chickenlove.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="11" fill="currentColor" />
+      <path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#FBEFDD" stroke-width="2.4" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.1 3 4 6.9 4c2.2 0 3.7 1.2 5.1 3 1.4-1.8 2.9-3 5.1-3C21 4 23.1 8.1 21.6 11.7 19.5 16.4 12 21 12 21z" fill="currentColor" />
+    </symbol>
+    <symbol id="i-egg" viewBox="0 0 24 24">
+      <path d="M12 2.5c-4 0-7 6.4-7 11.2C5 18 8.1 21.5 12 21.5s7-3.5 7-7.8C19 8.9 16 2.5 12 2.5z" fill="currentColor" />
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="ChickenLove – nach oben">
+        <img src="/images/chickenlove/icon.webp" alt="" width="36" height="36" />
+        <span>ChickenLove</span>
+      </a>
+      <nav class="nav__links" aria-label="Seitennavigation">
+        <a href="#funktionen">Funktionen</a>
+        <a href="/" class="nav__back">Maly Development</a>
+        <a href="#download" class="btn btn--small">App laden</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__swoosh" aria-hidden="true"></div>
+
+      <!-- floating hearts + eggs -->
+      <div class="floaties" aria-hidden="true">
+        <svg class="floaty floaty--heart" style="--x:8%;--y:70%;--s:22px;--d:0s"><use href="#i-heart" /></svg>
+        <svg class="floaty floaty--egg" style="--x:44%;--y:18%;--s:18px;--d:1.2s"><use href="#i-egg" /></svg>
+        <svg class="floaty floaty--heart" style="--x:52%;--y:62%;--s:14px;--d:2.4s"><use href="#i-heart" /></svg>
+        <svg class="floaty floaty--egg" style="--x:90%;--y:12%;--s:16px;--d:.6s"><use href="#i-egg" /></svg>
+        <svg class="floaty floaty--heart" style="--x:94%;--y:58%;--s:18px;--d:3s"><use href="#i-heart" /></svg>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <img class="hero__icon" src="/images/chickenlove/icon.webp" alt="ChickenLove App-Icon: zwei Hühner in einem Herz"
+            width="112" height="112" />
+          <h1 class="hero__title" id="hero-title" data-split>ChickenLove</h1>
+          <p class="hero__tagline">Deine Hühner. Alles im Blick.</p>
+          <span class="hero__rule" aria-hidden="true"></span>
+          <p class="hero__sub">Dein Bestand. Deine Eier. Dein Überblick.<br />Einfach verwalten – jeden Tag.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/de/app/chickenlove/id6803501674" target="_blank" rel="noopener noreferrer">
+              <img src="/images/badges/app-store-de.svg" alt="ChickenLove im App Store laden" width="132" height="44" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=de.malydevelopment.chickenlove" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/images/badges/google-play-de.png" alt="ChickenLove bei Google Play laden" width="148" height="44" />
+            </a>
+          </div>
+          <p class="hero__pill"><span class="dot"></span> Für iOS &amp; Android verfügbar</p>
+        </div>
+
+        <div class="hero__phones" aria-hidden="false">
+          <div class="hero__phone hero__phone--back" data-speed="-0.08">
+            <img src="/images/chickenlove/hero-huehner.webp" width="760" height="1459"
+              alt="ChickenLove auf dem iPhone: Stall-Übersicht mit fünf Hühnern" />
+          </div>
+          <div class="hero__phone hero__phone--front" data-speed="0.06">
+            <img src="/images/chickenlove/hero-heute.webp" width="760" height="1459"
+              alt="ChickenLove auf dem iPhone: Startseite mit heute gesammelten Eiern und Wochenstatistik" />
+          </div>
+        </div>
+      </div>
+
+      <div class="hills" aria-hidden="true">
+        <svg class="hills__orange" viewBox="0 0 2880 200" preserveAspectRatio="none">
+          <path d="M0 110 C 320 40 640 30 960 80 S 1600 150 1920 90 S 2560 40 2880 110 V200 H0Z" />
+        </svg>
+        <svg class="hills__olive" viewBox="0 0 2880 200" preserveAspectRatio="none">
+          <path d="M0 120 C 360 170 720 170 1080 120 S 1800 60 2160 110 S 2700 170 2880 120 V200 H0Z" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ PROMISE STRIP ============ -->
+    <section class="strip" aria-label="Das Wichtigste in Kürze">
+      <ul class="strip__list">
+        <li class="reveal"><strong>7</strong> Bereiche in einer App</li>
+        <li class="reveal" style="--delay:.08s"><strong>21</strong> Tage Brut Schritt für Schritt</li>
+        <li class="reveal" style="--delay:.16s"><strong>1</strong> Tipp pro Ei</li>
+        <li class="reveal" style="--delay:.24s"><strong>2</strong> Plattformen: iOS &amp; Android</li>
+      </ul>
+    </section>
+
+    <!-- ============ STORY (sticky phone) ============ -->
+    <section class="story" id="funktionen" aria-labelledby="story-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Funktionen</p>
+          <h2 id="story-title" class="h2">Vom ersten Ei<br /><span class="accent">bis zum Küken.</span></h2>
+          <p class="lead">ChickenLove begleitet deinen Hühneralltag – vom Eierzählen am Morgen bis zum Schlupftag.</p>
+        </header>
+
+        <div class="story__grid">
+          <div class="story__steps">
+            <article class="step" data-step="0">
+              <img class="step__phone" src="/images/chickenlove/screen-heute.webp" loading="lazy" width="640" height="1318"
+                alt="Heute-Ansicht: 3 Eier gesammelt, Wochenbalken und deine Hühner" />
+              <p class="step__tag">Heute</p>
+              <h3 class="h3">Alles Wichtige.<br /><span class="accent">Auf einen Blick.</span></h3>
+              <p>Ein Tipp auf <strong>+</strong> und das Ei ist gezählt. Ordne es direkt der richtigen Henne zu und sieh
+                sofort, wie deine Woche läuft.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Eier erfassen</li>
+                <li><svg><use href="#i-check" /></svg>Hennen zuordnen</li>
+                <li><svg><use href="#i-check" /></svg>Die Woche verfolgen</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="1">
+              <img class="step__phone" src="/images/chickenlove/screen-huehner.webp" loading="lazy" width="640" height="1318"
+                alt="Hühner-Ansicht: Liste mit Paula, Paul, Fritz, Berta und Frieda" />
+              <p class="step__tag">Hühner</p>
+              <h3 class="h3">Deine Hühner.<br /><span class="accent">Deine Übersicht.</span></h3>
+              <p>Jedes Tier mit Namen, Rasse, Alter und Legeleistung. So weißt du immer, wer fleißig ist – und wer eine
+                Pause braucht.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Alle Tiere an einem Ort</li>
+                <li><svg><use href="#i-check" /></svg>Hennen &amp; Hähne im Blick</li>
+                <li><svg><use href="#i-check" /></svg>Neue Hühner anlegen</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="2">
+              <img class="step__phone" src="/images/chickenlove/screen-gesundheit.webp" loading="lazy" width="640" height="1318"
+                alt="Gesundheits-Ansicht: Krankheiten erfassen und Verlauf der letzten 30 Tage" />
+              <p class="step__tag">Gesundheit</p>
+              <h3 class="h3">Gesundheit<br /><span class="accent">im Blick.</span></h3>
+              <p>Von Milbenkontrolle bis Medikament: Du dokumentierst in Sekunden und erkennst Muster, bevor es ernst
+                wird.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Krankheiten erfassen</li>
+                <li><svg><use href="#i-check" /></svg>Pflege dokumentieren</li>
+                <li><svg><use href="#i-check" /></svg>Verläufe nachlesen</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="3">
+              <img class="step__phone" src="/images/chickenlove/screen-wirtschaft.webp" loading="lazy" width="640" height="1318"
+                alt="Wirtschaft-Ansicht: Kosten pro Dutzend 2,56 Euro, Ausgaben, Einnahmen und Bilanz" />
+              <p class="step__tag">Wirtschaft</p>
+              <h3 class="h3">Was kommt rein?<br /><span class="accent">Was geht raus?</span></h3>
+              <p>Futter, Einstreu, verkaufte Eier: ChickenLove rechnet mit und zeigt dir, was dich ein Dutzend Eier
+                wirklich kostet.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Einnahmen erfassen</li>
+                <li><svg><use href="#i-check" /></svg>Ausgaben verfolgen</li>
+                <li><svg><use href="#i-check" /></svg>Eierkosten verstehen</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="4">
+              <img class="step__phone" src="/images/chickenlove/screen-brut.webp" loading="lazy" width="640" height="1318"
+                alt="Brut und Schlupf: laufender Brutgang Tag 14 von 21" />
+              <p class="step__tag">Brut &amp; Schlupf</p>
+              <h3 class="h3">21 Tage.<br /><span class="accent">Jeder Fortschritt im Blick.</span></h3>
+              <p>Starte einen Brutgang und ChickenLove zählt mit. Du siehst jeden Tag, wo du stehst – und wann der
+                Schlupf ansteht.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Brutgänge starten</li>
+                <li><svg><use href="#i-check" /></svg>Fortschritt verfolgen</li>
+                <li><svg><use href="#i-check" /></svg>Schlupftermin im Blick</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="5">
+              <img class="step__phone" src="/images/chickenlove/screen-schieren.webp" loading="lazy" width="640" height="1318"
+                alt="Schieren: acht Eier mit Befund befruchtet, unbefruchtet oder abgestorben" />
+              <p class="step__tag">Schieren</p>
+              <h3 class="h3">Kleines Ei.<br /><span class="accent">Großer Einblick.</span></h3>
+              <p>Halte das Ei gegen das Licht, tippe den Befund an – fertig. Die Fruchtbarkeit deines Zuchtpaars wird
+                automatisch berechnet.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Ei für Ei prüfen</li>
+                <li><svg><use href="#i-check" /></svg>Status dokumentieren</li>
+                <li><svg><use href="#i-check" /></svg>Fruchtbarkeit sehen</li>
+              </ul>
+            </article>
+
+            <article class="step" data-step="6">
+              <img class="step__phone" src="/images/chickenlove/screen-mehr.webp" loading="lazy" width="640" height="1318"
+                alt="Mehr-Ansicht: Ställe, Aufgaben, Export, Behörden, Impfbescheinigungen und Tierarztsuche" />
+              <p class="step__tag">Mehr</p>
+              <h3 class="h3">Eine App.<br /><span class="accent">Für deinen ganzen Bestand.</span></h3>
+              <p>Mehrere Ställe, Erinnerungen, PDF-Export, Impfbescheinigungen und der Tierarzt in deiner Nähe – alles
+                da, wenn du es brauchst.</p>
+              <ul class="checks">
+                <li><svg><use href="#i-check" /></svg>Ställe organisieren</li>
+                <li><svg><use href="#i-check" /></svg>Aufgaben &amp; Erinnerungen</li>
+                <li><svg><use href="#i-check" /></svg>Tierarzt in der Nähe finden</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="story__stage" aria-hidden="true">
+            <div class="stage">
+              <div class="stage__glow"></div>
+              <div class="stage__phone">
+                <img src="/images/chickenlove/screen-heute.webp" alt="" class="is-active" />
+                <img src="/images/chickenlove/screen-huehner.webp" alt="" loading="lazy" />
+                <img src="/images/chickenlove/screen-gesundheit.webp" alt="" loading="lazy" />
+                <img src="/images/chickenlove/screen-wirtschaft.webp" alt="" loading="lazy" />
+                <img src="/images/chickenlove/screen-brut.webp" alt="" loading="lazy" />
+                <img src="/images/chickenlove/screen-schieren.webp" alt="" loading="lazy" />
+                <img src="/images/chickenlove/screen-mehr.webp" alt="" loading="lazy" />
+              </div>
+              <div class="tabbar">
+                <button data-go="0" class="is-active">Heute</button>
+                <button data-go="1">Hühner</button>
+                <button data-go="2">Gesundheit</button>
+                <button data-go="3">Wirtschaft</button>
+                <button data-go="4">Brut</button>
+                <button data-go="5">Schieren</button>
+                <button data-go="6">Mehr</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIVE CARDS (interactive) ============ -->
+    <section class="live" aria-labelledby="live-title">
+      <img class="live__eggs" src="/images/chickenlove/eggs.webp" alt="" width="500" height="440" loading="lazy"
+        data-speed="0.12" aria-hidden="true" />
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Probier's aus</p>
+          <h2 id="live-title" class="h2">So fühlt sich<br /><span class="accent">ChickenLove an.</span></h2>
+        </header>
+
+        <div class="cards">
+          <!-- Egg counter -->
+          <div class="card card--rust reveal">
+            <p class="card__label">Heute gesammelt</p>
+            <p class="card__big"><span id="egg-count">3</span> <small>Eier</small></p>
+            <div class="card__eggs" id="egg-row" aria-hidden="true"></div>
+            <div class="card__controls">
+              <button class="round" id="egg-plus" aria-label="Ein Ei hinzufügen">+</button>
+              <button class="round round--soft" id="egg-minus" aria-label="Ein Ei entfernen">−</button>
+            </div>
+            <p class="card__hint">Tipp auf + – genau wie in der App.</p>
+          </div>
+
+          <!-- Week bars -->
+          <div class="card card--cream reveal" style="--delay:.1s">
+            <div class="card__row">
+              <p class="card__title">Diese Woche</p>
+              <p class="card__meta">20 Eier · Ø 2,9/Tag</p>
+            </div>
+            <div class="bars" data-bars>
+              <div class="bar" style="--v:3"><span>3</span><i></i><em>Mi</em></div>
+              <div class="bar" style="--v:2"><span>2</span><i></i><em>Do</em></div>
+              <div class="bar" style="--v:3"><span>3</span><i></i><em>Fr</em></div>
+              <div class="bar" style="--v:3"><span>3</span><i></i><em>Sa</em></div>
+              <div class="bar" style="--v:3"><span>3</span><i></i><em>So</em></div>
+              <div class="bar" style="--v:3"><span>3</span><i></i><em>Mo</em></div>
+              <div class="bar bar--today" style="--v:3"><span>3</span><i></i><em>Di</em></div>
+            </div>
+          </div>
+
+          <!-- Brood progress -->
+          <div class="card card--olive reveal" style="--delay:.2s">
+            <div class="card__row">
+              <p class="card__label">Laufender Brutgang</p>
+              <p class="card__label">Paul &amp; Paula</p>
+            </div>
+            <p class="card__big">Tag <span data-count="14">14</span> <small>von 21</small></p>
+            <div class="progress"><i data-progress="0.667"></i></div>
+            <div class="card__row card__row--small">
+              <span>8 Eier im Brüter</span><span>Schlupf am 13.10.2026</span>
+            </div>
+          </div>
+
+          <!-- Cost per dozen -->
+          <div class="card card--olive-dark reveal" style="--delay:.3s">
+            <p class="card__label">Kosten pro Dutzend</p>
+            <p class="card__big"><span data-count="2.56" data-decimals="2">2,56</span> <small>€</small></p>
+            <p class="card__small">Laden vor Ort: 4,29 € <span class="chip">du sparst 1,73 €</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ALL FEATURES ============ -->
+    <section class="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Alles drin</p>
+          <h2 id="features-title" class="h2">Eine App.<br /><span class="accent">Für alles rund ums Huhn.</span></h2>
+        </header>
+        <ul class="grid">
+          <li class="tile reveal"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c-3.6 0-6.5 6-6.5 10.3C5.5 17.4 8.4 21 12 21s6.5-3.6 6.5-7.7C18.5 9 15.6 3 12 3z"/></svg></span><h3>Eier erfassen</h3><p>Ein Tipp pro Ei, die Woche immer im Blick.</p></li>
+          <li class="tile reveal" style="--delay:.05s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 20h10M9 20c-3-1-4.5-3.6-4.5-6.5V11l3 1c0-3.5 2-6 4.8-6 1.6 0 2.7 1 2.7 2.4L18 9l-2.5 1.2c1.8 1.2 3 3.2 3 5.3 0 2.2-1.6 3.8-3.5 4.5"/><circle cx="13.5" cy="8.6" r=".6"/></svg></span><h3>Hühner verwalten</h3><p>Name, Rasse, Alter und Legeleistung je Tier.</p></li>
+          <li class="tile reveal" style="--delay:.1s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9.5C5 7.5 7 6 9 6c1.4 0 2.4.7 3 1.7.6-1 1.6-1.7 3-1.7 2 0 4 1.5 4 4.5 0 5.2-7 9.5-7 9.5z"/><path d="M8 12h2l1-2 2 4 1-2h2"/></svg></span><h3>Gesundheit &amp; Pflege</h3><p>Symptome, Medikamente und Checks dokumentiert.</p></li>
+          <li class="tile reveal" style="--delay:.15s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M14.5 9.5a3 3 0 1 0 0 5M9 11h4M9 13h4"/></svg></span><h3>Einnahmen &amp; Kosten</h3><p>Sieh, was dich ein Dutzend Eier wirklich kostet.</p></li>
+          <li class="tile reveal" style="--delay:.2s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 13c0 4 3 7 7 7s7-3 7-7"/><path d="M5 13l2.5-2 2 2 2.5-2 2.5 2 2-2 2.5 2"/><circle cx="12" cy="7" r="3"/></svg></span><h3>Brut &amp; Schlupf</h3><p>21 Tage Countdown bis zum Schlupftag.</p></li>
+          <li class="tile reveal" style="--delay:.25s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/></svg></span><h3>Schieren</h3><p>Befruchtung Ei für Ei festhalten.</p></li>
+          <li class="tile reveal" style="--delay:.3s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4.5" width="14" height="16" rx="2.5"/><path d="M9 4.5h6v2.5H9zM8.5 11l1.5 1.5 3-3M8.5 16h7"/></svg></span><h3>Erinnerungen &amp; Ställe</h3><p>Aufgaben, Impfungen und mehrere Ställe.</p></li>
+          <li class="tile reveal" style="--delay:.35s"><span class="tile__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg></span><h3>Tierarzt finden</h3><p>Geflügel-Tierärzte in deiner Nähe.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="cta" id="download" aria-labelledby="cta-title">
+      <img class="cta__nest" src="/images/chickenlove/nest.webp" alt="" width="520" height="320" loading="lazy"
+        data-speed="0.1" aria-hidden="true" />
+      <div class="container cta__inner">
+        <div class="cta__copy reveal">
+          <img src="/images/chickenlove/icon.webp" alt="" width="88" height="88" class="cta__icon heartbeat" />
+          <h2 id="cta-title" class="h2">Hol dir <span class="accent">ChickenLove.</span></h2>
+          <p class="lead">Kostenlos laden und noch heute dein erstes Ei erfassen. Für iPhone und Android.</p>
+          <div class="stores">
+            <a href="https://apps.apple.com/de/app/chickenlove/id6803501674" target="_blank" rel="noopener noreferrer">
+              <img src="/images/badges/app-store-de.svg" alt="ChickenLove im App Store laden" width="132" height="44"
+                loading="lazy" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=de.malydevelopment.chickenlove" target="_blank"
+              rel="noopener noreferrer">
+              <img src="/images/badges/google-play-de.png" alt="ChickenLove bei Google Play laden" width="148" height="44"
+                loading="lazy" />
+            </a>
+          </div>
+        </div>
+        <div class="cta__phone reveal reveal--right">
+          <img src="/images/chickenlove/tilt-brut.webp" alt="ChickenLove Brut- und Schlupf-Ansicht auf dem iPhone"
+            width="640" height="1574" loading="lazy" />
+        </div>
+      </div>
+      <div class="hills hills--footer" aria-hidden="true">
+        <svg class="hills__orange" viewBox="0 0 2880 200" preserveAspectRatio="none">
+          <path d="M0 110 C 320 40 640 30 960 80 S 1600 150 1920 90 S 2560 40 2880 110 V200 H0Z" />
+        </svg>
+        <svg class="hills__olive" viewBox="0 0 2880 200" preserveAspectRatio="none">
+          <path d="M0 120 C 360 170 720 170 1080 120 S 1800 60 2160 110 S 2700 170 2880 120 V200 H0Z" />
+        </svg>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Mit <svg class="footer__heart"><use href="#i-heart" /></svg> entwickelt von
+        <a href="/">Maly Development</a></p>
+      <nav aria-label="Rechtliches">
+        <a href="mailto:info@maly-development.de">Kontakt</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/agb.html">AGB</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="./chickenlove.js"></script>
+</body>
+
+</html>

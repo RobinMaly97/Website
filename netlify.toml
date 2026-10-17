@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# ChickenLove landing page (standalone page, built from chickenlove/index.html).
+# Must come before the SPA fallback below, otherwise /chickenlove would load the React app.
+[[redirects]]
+  from = "/chickenlove"
+  to = "/chickenlove/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/chickenlove/"
+  to = "/chickenlove/index.html"
+  status = 200
+
 # SPA fallback — every non-file route serves the React app.
 # Netlify serves real static files (impressum.html, datenschutz.html, agb.html,
 # __forms.html, /images/*) BEFORE applying this rule, so the legal pages and

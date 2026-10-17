@@ -95,6 +95,16 @@ export function Showcase() {
 
                 <p className="mt-5 text-[15px] leading-relaxed text-muted">{project.body}</p>
 
+                {asset.page && (
+                  <a
+                    href={asset.page}
+                    className="group mt-4 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-violet transition-colors hover:text-fg"
+                  >
+                    {t.projects.details}
+                    <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+                  </a>
+                )}
+
                 <div className="mt-5 flex flex-wrap gap-2">
                   {asset.tags.map((tag) => (
                     <span

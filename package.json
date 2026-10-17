@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "optimize:images": "node scripts/optimize-images.mjs",
     "build:mockups": "node scripts/build-mockups.mjs",
-    "build:logo": "node scripts/build-logo.mjs"
+    "build:logo": "node scripts/build-logo.mjs",
+    "build:chickenlove": "node scripts/build-chickenlove.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^9.114.3",

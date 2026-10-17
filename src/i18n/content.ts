@@ -40,6 +40,7 @@ export interface SiteContent {
     heading: string;
     sub: string;
     badge: string;
+    details: string;
     items: { name: string; category: string; body: string }[];
   };
   process: {
@@ -96,6 +97,8 @@ export const projectAssets: {
   mockups: string[];
   appStore?: string;
   playStore?: string;
+  /** Own landing page on this site, e.g. /chickenlove */
+  page?: string;
   tags: string[];
 }[] = [
   {
@@ -118,6 +121,7 @@ export const projectAssets: {
     mockups: mockups('chickenlove', 7),
     appStore: 'https://apps.apple.com/de/app/chickenlove/id6803501674',
     playStore: 'https://play.google.com/store/apps/details?id=de.malydevelopment.chickenlove',
+    page: '/chickenlove/',
     tags: ['Kotlin', 'Jetpack Compose', 'Widgets'],
   },
 ];
@@ -208,6 +212,7 @@ const de: SiteContent = {
     heading: 'Live in den App Stores.',
     sub: 'Eigene Apps, die ich von Grund auf entwickelt und im App Store sowie bei Google Play veröffentlicht habe.',
     badge: 'Live',
+    details: 'Zur App-Seite',
     items: [
       {
         name: 'TimeTrackerProf',
@@ -370,6 +375,7 @@ const en: SiteContent = {
     heading: 'Live in the app stores.',
     sub: 'My own apps, built from scratch and published on the App Store and Google Play.',
     badge: 'Live',
+    details: 'View app page',
     items: [
       {
         name: 'TimeTrackerProf',
